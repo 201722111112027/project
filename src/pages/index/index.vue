@@ -45,7 +45,13 @@
 </i-grid>
     <i-panel title="吃货推荐">
       <view class="top-padding">
-      <i-card title="良品铺子" extra="零食" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+        <view class="top-padding">
+          <i-card title="良品铺子" extra="零食" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+        <view slot="content">好多不错的零食</view>
+        <view slot="footer">后街1-22</view>
+      </i-card>
+      </view>
+      <!-- <i-card title="良品铺子" extra="零食" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
         <view slot="content">好多不错的零食</view>
         <view slot="footer">后街1-22</view>
       </i-card>
@@ -69,7 +75,7 @@
         <view slot="content">内容不错</view>
         <view slot="footer">尾部内容</view>
       </i-card>
-      <view class="top-padding"></view>
+      <view class="top-padding"></view> -->
     </view>
     </i-panel>
   </div>
@@ -81,6 +87,7 @@ import card from '@/components/card'
 export default {
   data () {
     return {
+      shop: [],
       motto: 'Hello miniprograme',
       userInfo: {
         nickName: 'mpvue',

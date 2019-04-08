@@ -1,18 +1,34 @@
 <template>
   <div>
-      <swiper v-if="imgUrls.length > 0" indidator-dots="imgUrls.length > 1" >
-      <block v-for="(item, index) in imgUrls" :key="index" >
-        <swiper-item>
-          <image :src="item" mode="scaleToFill"></image>
-        </swiper-item>
-      </block>
-    </swiper>
-
-    <ul class="container log-list">
-      <li v-for="(log, index) in logs" :class="{ red: aa }" :key="index" class="log-item">
-        <card :text="(index + 1) + ' . ' + log"></card>
-      </li>
-    </ul>
+    <!-- <div @click="toggleLeft1">
+     <Button :btns="resetBtn">左边弹出3</Button>
+    </div> -->
+  <i-button @click="toggleLeft1" type="ghost">左边弹出1</i-button>
+  <i-button @click="toggleLeft2" type="primary">左边弹出2</i-button>
+  <i-button @click="toggleRight1" type="ghost">右边弹出1</i-button>
+  <i-button @click="toggleRight2" type="primary">右边弹出2</i-button>
+  <i-drawer mode="left" :visible="showLeft1" @close="toggleLeft1">
+    <view class="demo-container">
+        单击遮罩层关闭
+    </view>
+  </i-drawer>
+  <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
+    <view class="demo-container">
+        禁止单击遮罩关闭
+        <i-button @click="toggleLeft2" type="primary">关闭</i-button>
+    </view>
+  </i-drawer>
+  <i-drawer mode="right" :visible="showRight1" @close="toggleRight1">
+    <view class="demo-container">
+        单击遮罩层关闭
+    </view>
+  </i-drawer>
+  <i-drawer mode="right" :visible="showRight2" mask-closable="false">
+    <view class="demo-container">
+        禁止单击遮罩关闭
+        <i-button @click="toggleRight2" type="primary">关闭</i-button>
+    </view>
+  </i-drawer>
   </div>
 </template>
 
@@ -27,15 +43,40 @@ export default {
 
   data () {
     return {
-      logs: [],
-      imgUrls: [
-        'http://mss.sankuai.com/v1/mss_51a7233366a4427fa6132a6ce72dbe54/newsPicture/05558951-de60-49fb-b674-dd906c8897a6',
-        'http://mss.sankuai.com/v1/mss_51a7233366a4427fa6132a6ce72dbe54/coursePicture/0fbcfdf7-0040-4692-8f84-78bb21f3395d',
-        'http://mss.sankuai.com/v1/mss_51a7233366a4427fa6132a6ce72dbe54/management-school-picture/7683b32e-4e44-4b2f-9c03-c21f34320870'
-      ]
+      shop: [],
+      motto: 'Hello miniprograme',
+      userInfo: {
+        nickName: 'mpvue',
+        avatarUrl: 'http://mpvue.com/assets/logo.png'
+      },
+      showLeft1: false,
+      showLeft2: false,
+      showRight1: false,
+      showRigh2: false
     }
   },
-
+  method :{
+  toggleLeft1 () {
+    console.log('123')
+    this.setData({
+      showLeft1: this.data.showLeft1
+    })
+  },
+  toggleLeft2 () {
+    this.setData({
+      showLeft2: this.data.showLeft2
+    })
+  },
+  toggleRight1 () {
+    this.setData({
+      showRight1: !this.data.showRight1
+    })
+  },
+  toggleRight2 () {
+    this.setData({
+      showRight2: !this.data.showRight2
+    })
+  },
   created () {
     let logs
     if (mpvuePlatform === 'my') {
@@ -45,6 +86,7 @@ export default {
     }
     this.logs = logs.map(log => formatTime(new Date(log)))
   }
+}
 }
 </script>
 
