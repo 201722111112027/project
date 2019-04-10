@@ -7,10 +7,12 @@
     <open-data type="userNickName"></open-data>
     </view>
     <i-cell-group>
-    <i-cell title="我的收藏" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="接收通知">
+      <i-cell title="接收通知">
         <switch slot="footer" checked />
     </i-cell>
+    <i-cell title="我的收藏" is-link url="/pages/logs/main"></i-cell>
+    
+    <i-cell title="我的足迹" is-link url="/pages/logs/main"></i-cell>
 </i-cell-group>
   </div>
 </template>

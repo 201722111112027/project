@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "西点世界",
+  "usingComponents": {
+    "i-card": "../../../static/dist/card/index",
+    "i-panel": "../../../static/dist/panel/index"
+}
+}

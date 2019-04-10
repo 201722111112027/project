@@ -1,5 +1,5 @@
 <template>
-  <div><i-tabs :current="current_scroll" scroll @change="handleChangeScroll">
+  <div><i-tabs :current="current_scroll" color="#f759ab" scroll @change="handleChangeScroll">
     <i-tab key="tab1" title="选项1"></i-tab>
     <i-tab key="tab2" title="选项2"></i-tab>
     <i-tab key="tab3" title="选项3"></i-tab>

@@ -4,7 +4,8 @@
     "pages/logs/main",
     "pages/counter/main",
     "pages/mine/main",
-    "pages/map/main"
+    "pages/map/main",
+    "pages/xidian/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

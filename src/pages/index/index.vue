@@ -8,7 +8,7 @@
         <i-grid-icon>
             <image src="/static/grid/1.png" />
         </i-grid-icon>
-        <i-grid-label>西点</i-grid-label>
+        <i-grid-label is-link url="/pages/xidian/main">西点</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
@@ -46,7 +46,7 @@
  <i-panel title="吃货推荐">
     <!-- <view class="top-padding"> -->
     <view v-for="item in shops" :key='item' class="top-padding">
-    <i-card  :title="item.name" :extra="item.type" thumb="cloud://lxy599111-n9b4d.6c78-lxy599111-n9b4d/店铺.png	">
+    <i-card  :title="item.name" :extra="item.type" thumb="/static/images/shop.png">
     <view slot="content">{{item.introduction}}</view>
     <view slot="footer">{{item.address}}</view>
     </i-card></view>
