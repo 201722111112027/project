@@ -8,7 +8,7 @@
         <i-grid-icon>
             <image src="/static/grid/1.png" />
         </i-grid-icon>
-        <i-grid-label is-link url="/pages/xidian/main">西点</i-grid-label>
+        <i-grid-label @click="transt" >西点</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
@@ -86,6 +86,14 @@ export default {
     clickHandle (ev) {
       console.log('clickHandle:', ev)
       // throw {message: 'custom test'}
+    },
+    transt(){
+       console.log("123")
+      wx.navigateTo({
+       
+        url: '/pages/xidian/main'
+        
+      })
     }
   },
 

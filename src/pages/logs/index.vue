@@ -29,6 +29,20 @@
         <i-button @click="toggleRight2" type="primary">关闭</i-button>
     </view>
   </i-drawer>
+   <map
+  id="map"
+  longitude="113.324520"
+  latitude="23.099994"
+  scale="14"
+  :controls="controls"
+  bindcontroltap="controltap"
+  :markers="markers"
+  bindmarkertap="markertap"
+  :polyline="polyline"
+  @regionchange="regionchange"
+  show-location
+  style="width: 100%; height: 150px;"
+></map>
   </div>
 </template>
 
@@ -52,7 +66,38 @@ export default {
       showLeft1: false,
       showLeft2: false,
       showRight1: false,
-      showRigh2: false
+      showRigh2: false,
+        markers: [{
+      iconPath: '/static/images/marker.png',
+      id: 0,
+      latitude: 23.099994,
+      longitude: 113.324520,
+      width: 50,
+      height: 50
+    }],
+    polyline: [{
+      points: [{
+        longitude: 113.3245211,
+        latitude: 23.10229
+      }, {
+        longitude: 113.324520,
+        latitude: 23.21229
+      }],
+      color: '#FF0000DD',
+      width: 2,
+      dottedLine: true
+    }],
+    controls: [{
+      id: 1,
+      iconPath: '/static/images/location.png',
+      position: {
+        left: 0,
+        top: 300 - 50,
+        width: 50,
+        height: 50
+      },
+      clickable: true
+    }]
     }
   },
   method :{

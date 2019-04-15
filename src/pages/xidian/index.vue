@@ -1,14 +1,19 @@
 <template>
   <div>
-    <i-panel title="吃货推荐">
-    <!-- <view class="top-padding"> -->
-    <view v-for="item in shops" :key='item' class="top-padding">
-    <i-card  :title="item.name" :extra="item.type" thumb="/static/images/shop.png">
-    <view slot="content">{{item.introduction}}</view>
-    <view slot="footer">{{item.address}}</view>
-    </i-card></view>
-    <!-- </view> -->
-    </i-panel>
+    <map
+  id="map"
+  longitude="113.324520"
+  latitude="23.099994"
+  scale="14"
+  :controls="controls"
+  bindcontroltap="controltap"
+  :markers="markers"
+  bindmarkertap="markertap"
+  :polyline="polyline"
+  @regionchange="regionchange"
+  show-location
+  style="width: 100%; height: 100%;"
+></map>
   </div>
 </template>
 
@@ -22,26 +27,50 @@ export default {
   },
 
   data () {
-    return {
-      shop: [],
-      motto: 'Hello miniprograme',
-      userInfo: {
-        nickName: 'mpvue',
-        avatarUrl: 'http://mpvue.com/assets/logo.png'
+      return {
+        markers: [{
+      iconPath: '/static/images/marker.png',
+      id: 0,
+      latitude: 23.099994,
+      longitude: 113.324520,
+      width: 50,
+      height: 50
+    }],
+    polyline: [{
+      points: [{
+        longitude: 113.3245211,
+        latitude: 23.10229
+      }, {
+        longitude: 113.324520,
+        latitude: 23.21229
+      }],
+      color: '#FF0000DD',
+      width: 2,
+      dottedLine: true
+    }],
+    controls: [{
+      id: 1,
+      iconPath: '/static/images/location.png',
+      position: {
+        left: 0,
+        top: 300 - 50,
+        width: 50,
+        height: 50
       },
+      clickable: true
+    }]
     }
   },
-   created () {
-    const db=wx.cloud.database({env: 'lxy599111-n9b4d'})
-    db.collection('shop').get().then(
-      res=>{
-        this.shops=res.data
-        console.log(this.shops)
-      }
-    )
-    // wx.cloud.callFunction({name: 'user'}).then(
-    //   res=>{console.log(res)}
-    // )
+  methods: {
+    regionchange(e) {
+    console.log(e.type)
+  },
+  markertap(e) {
+    console.log(e.markerId)
+  },
+  controltap(e) {
+    console.log(e.controlId)
+  }
   }
 }
 </script>
