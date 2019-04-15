@@ -1,14 +1,14 @@
 <template>
-  <div @click="clickHandle">
+  <div>
     <i-notice-bar icon="systemprompt" loop>
     2019年4月1日举行吃货节
     </i-notice-bar>
     <i-grid i-class="no-border">
-    <i-grid-item i-class="no-border">
+    <i-grid-item @click="transt" i-class="no-border">
         <i-grid-icon>
             <image src="/static/grid/1.png" />
         </i-grid-icon>
-        <i-grid-label @click="transt" >西点</i-grid-label>
+        <i-grid-label  >西点</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
@@ -90,9 +90,7 @@ export default {
     transt(){
        console.log("123")
       wx.navigateTo({
-       
         url: '/pages/xidian/main'
-        
       })
     }
   },
