@@ -1,20 +1,25 @@
 <template>
-  <div>
-    <map
-  id="map"
-  longitude="113.324520"
-  latitude="23.099994"
-  scale="14"
-  :controls="controls"
-  bindcontroltap="controltap"
-  :markers="markers"
-  bindmarkertap="markertap"
-  :polyline="polyline"
-  @regionchange="regionchange"
-  show-location
-  style="width: 100%; height: 100%;"
-></map>
-  </div>
+ <div class="test">
+<div class="testNav">
+<div
+:class="{'selected':tab === 1,'testTitle':true}"
+@click="changTab(1)"
+>人气</div>
+<div
+:class="{'selected':tab === 2,'testTitle':true}"
+@click="changTab(2)"
+>销量</div>
+<div
+:class="{'selected':tab === 3,'testTitle':true}"
+@click="changTab(3)"
+>综合</div>
+</div>
+<div class="container">
+<div v-if="tab===1">1</div>
+<div v-else-if="tab===2">2</div>
+<div v-else>3</div>
+</div>
+</div>
 </template>
 
 <script>
@@ -28,61 +33,34 @@ export default {
 
   data () {
       return {
-        markers: [{
-      iconPath: '/static/images/marker.png',
-      id: 0,
-      latitude: 23.099994,
-      longitude: 113.324520,
-      width: 50,
-      height: 50
-    }],
-    polyline: [{
-      points: [{
-        longitude: 113.3245211,
-        latitude: 23.10229
-      }, {
-        longitude: 113.324520,
-        latitude: 23.21229
-      }],
-      color: '#FF0000DD',
-      width: 2,
-      dottedLine: true
-    }],
-    controls: [{
-      id: 1,
-      iconPath: '/static/images/location.png',
-      position: {
-        left: 0,
-        top: 300 - 50,
-        width: 50,
-        height: 50
-      },
-      clickable: true
-    }]
+        tab: 1
     }
   },
   methods: {
-    regionchange(e) {
-    console.log(e.type)
-  },
-  markertap(e) {
-    console.log(e.markerId)
-  },
-  controltap(e) {
-    console.log(e.controlId)
-  }
+    changTab(index) {
+    this.tab = index;
+    }
   }
 }
 </script>
 
 <style>
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+.test {
+width: 100%;
 }
-
-.log-item {
-  margin: 10rpx;
+.testNav {
+padding: 0 20rpx;
+height: 80rpx;
+line-height: 80rpx;
+display: flex;
 }
+.testTitle {
+flex: 1;
+text-align: center;
+}
+.selected {
+color: #87caee;
+border-bottom: 1px solid #87caee;
+}
+.container {}
 </style>

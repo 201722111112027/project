@@ -20,12 +20,12 @@
     "borderStyle": "white",
 
     "list": [{
-      "text": "首页",
+      "text": "书城",
       "pagePath": "pages/index/main",
       "iconPath": "static/tabs/home.png",
       "selectedIconPath": "static/tabs/home-active.png"
     }, {
-      "text": "附近",
+      "text": "书架",
       "pagePath": "pages/map/main",
       "iconPath": "static/tabs/map.png",
       "selectedIconPath": "static/tabs/map-active.png"
