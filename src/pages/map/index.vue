@@ -1,42 +1,55 @@
 <template>
-  <div><i-tabs :current="current_scroll" color="#f759ab" scroll @change="handleChangeScroll">
-    <i-tab key="tab1" title="选项1"></i-tab>
-    <i-tab key="tab2" title="选项2"></i-tab>
-    <i-tab key="tab3" title="选项3"></i-tab>
-    <i-tab key="tab4" title="选项4"></i-tab>
-    <i-tab key="tab5" title="选项5"></i-tab>
-    <i-tab key="tab6" title="选项6"></i-tab>
-    <i-tab key="tab7" title="选项7"></i-tab>
-    <i-tab key="tab8" title="选项8"></i-tab>
-    <i-tab key="tab9" title="选项9"></i-tab>
-</i-tabs>
-      <view class="top-padding">
-      <i-card title="良品铺子" extra="零食" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-        <view slot="content">好多不错的零食</view>
-        <view slot="footer">后街1-22</view>
-      </i-card>
-      <view class="top-padding"></view>
-      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-        <view slot="content">内容不错</view>
-        <view slot="footer">尾部内容</view>
-      </i-card>
-      <view class="top-padding"></view>
-      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-        <view slot="content">内容不错</view>
-        <view slot="footer">尾部内容</view>
-      </i-card>
-      <view class="top-padding"></view>
-      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-        <view slot="content">内容不错</view>
-        <view slot="footer">尾部内容</view>
-      </i-card>
-      <view class="top-padding"></view>
-      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-        <view slot="content">内容不错</view>
-        <view slot="footer">尾部内容</view>
-      </i-card>
-      <view class="top-padding"></view>
-    </view>
+  <div><i-head color="#f759ab" >
+     <i-notice-bar icon="systemprompt" loop>
+    签到领福利！！！
+    </i-notice-bar>
+    
+    <i-panel>
+    <i-grid i-class="no-border">
+    <i-grid-item @click="transt" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1952041692,3359063424&fm=58&bpow=180&bpoh=240" />
+        </i-grid-icon>
+        <i-grid-label  >武动乾坤</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="transt" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3299594702,2547174108&fm=58&bpow=640&bpoh=878" />
+        </i-grid-icon>
+        <i-grid-label  >斗破苍穹</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="transt" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3642676310,272795922&fm=58&bpow=400&bpoh=504" />
+        </i-grid-icon>
+        <i-grid-label  >大主宰</i-grid-label>
+    </i-grid-item>
+     </i-grid>
+    </i-panel>
+    <i-panel>
+     <i-grid i-class="no-border">
+    <i-grid-item @click="transt" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2619242940,2733301503&fm=58" />
+        </i-grid-icon>
+        <i-grid-label >三生三世十里桃花</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="transt" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2603840089,1784701637&fm=58&bpow=417&bpoh=578" />
+        </i-grid-icon>
+        <i-grid-label >三生三世枕上书</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="transt" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3665834024,3736302482&fm=58&bpow=634&bpoh=800" />
+        </i-grid-icon>
+        <i-grid-label >三生三世步生莲</i-grid-label>
+    </i-grid-item>
+    </i-grid>
+    </i-panel>
+</i-head>
+      
   </div>
 </template>
 
