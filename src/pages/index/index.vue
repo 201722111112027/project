@@ -3,36 +3,36 @@
     <i-notice-bar icon="systemprompt" loop>
     一大批新书即将上线
     </i-notice-bar>
-    <i-input i-class="p.margin" :value="value5" placeholder="平凡世界" />
-    <i-button i-class="margin" @click="click" type="primary" size="small">分类</i-button>
+    <i-input i-class="put" :value="value5" placeholder="平凡世界" />
     <swiper
-  :indicator-dots="indicatorDots"
-  :autoplay="autoplay"
-  :interval="interval"
-  :duration="duration"
->
-  <block v-for="item in imgUrls" :key="item">
-    <swiper-item>
-      <image :src="item" class="slide-image" width="100%" height="400" />
-    </swiper-item>
-  </block>
-</swiper>
+      :indicator-dots="indicatorDots"
+      :autoplay="autoplay"
+      :interval="interval"
+      :duration="duration"
+      style="height:250px"
+    >
+    <block v-for="item in imgUrls" :key="item">
+      <swiper-item>
+        <image :src="item" style="width:100%;"/>
+      </swiper-item>
+    </block>
+  </swiper>
     <i-grid i-class="no-border">
     <i-grid-item @click="transt" i-class="no-border">
         <i-grid-icon>
-            <image src="/static/grid/1.png" />
+            <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=606397164,1884706880&fm=111&gp=0.jpg" />
         </i-grid-icon>
         <i-grid-label  >仙侠</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
-            <image src="/static/grid/2.png" />
+            <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=471158069,86109744&fm=27&gp=0.jpg" />
         </i-grid-icon>
         <i-grid-label>都市</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
-            <image src="/static/grid/3.png" />
+            <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3815060115,2662064952&fm=27&gp=0.jpg" />
         </i-grid-icon>
         <i-grid-label>玄幻</i-grid-label>
     </i-grid-item>
@@ -40,19 +40,19 @@
     <i-grid i-class="no-border">
     <i-grid-item i-class="no-border">
         <i-grid-icon>
-            <image src="/static/grid/4.png" />
+            <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=899375008,44305335&fm=27&gp=0.jpg" />
         </i-grid-icon>
         <i-grid-label>爱情</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
-            <image src="/static/grid/5.png" />
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1893895325,3596953077&fm=27&gp=0.jpg" />
         </i-grid-icon>
         <i-grid-label>名著</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
-            <image src="/static/grid/6.png" />
+            <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2445585430,4134671430&fm=27&gp=0.jpg" />
         </i-grid-icon>
         <i-grid-label>完本</i-grid-label>
     </i-grid-item>
@@ -67,11 +67,11 @@
     </view>
     </i-panel> -->
     <i-panel title="图书热门推荐">
-    <i-card title="平凡世界" extra="luyao" thumb="http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg">
+    <i-card @click="transt" title="平凡世界" extra="路遥" thumb="http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg">
     <view slot="content">《平凡的世界》是中国作家路遥创作的一部百万字的小说。这是一部全景式地表现中国当代城乡社会生活的长篇小说，全书共三部。1986年12月首次出版。</view>
     <view slot="footer">推荐度：98%</view>
     </i-card>
-    <i-card title="围城" extra="钱钟书" thumb="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=b93945dece1b9d168ac79d67cbdfb4eb/b03533fa828ba61e672c1f2e4134970a314e59f5.jpg">
+    <i-card  title="围城" extra="钱钟书" thumb="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=b93945dece1b9d168ac79d67cbdfb4eb/b03533fa828ba61e672c1f2e4134970a314e59f5.jpg">
     <view slot="content">《围城》是钱钟书所著的长篇小说，是中国现代文学史上一部风格独特的讽刺小说。被誉为“新儒林外史”。第一版于1947年由上海晨光出版公司出版。故事主要写抗战初期知识分子的群相。</view>
     <view slot="footer">推荐度：95%</view>
 </i-card>
@@ -102,12 +102,13 @@ export default {
         'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555729898350&di=0f2e2beb6657de0268d6473eabc0dafc&imgtype=0&src=http%3A%2F%2Fs9.rr.itc.cn%2Fr%2FwapChange%2F20173_31_17%2Fa0zvhl1070816226619.jpg',
         'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555729898346&di=53120318aab25723f14e4c70be9463b8&imgtype=0&src=http%3A%2F%2Fimg.mp.sohu.com%2Fupload%2F20170513%2F8e0db367b0a44076adbdf96271cd8b4b_th.png'
       ],
-      indicatorDots: false,
-    autoplay: false,
-    interval: 5000,
-    duration: 1000,
+       indicatorDots: true,
+      autoplay: true,
+      interval: 5000,
+      duration: 1000,
       value5: '',
       shops: [],
+      isFolded: true,
       motto: 'Hello miniprograme',
       userInfo: {
         nickName: 'mpvue',
@@ -129,21 +130,26 @@ export default {
         mpvue.navigateTo({ url })
       }
     },
+    change: function (e) {
+    this.setData({
+      isFolded: !this.data.isFolded,
+    })
+    },
     clickHandle (ev) {
       console.log('clickHandle:', ev)
       // throw {message: 'custom test'}
     },
     transt(){
-       console.log("123")
+      log.console("123")
       wx.navigateTo({
-        url: '/pages/xidian/main'
+        url: '/pages/classification/main'
       })
     },
     click(){
       wx.navigateTo({
         url: '/pages/xidian/main'
       })
-    }
+    },
   },
 
   created () {
@@ -218,7 +224,7 @@ div >>> .no-border {
   height:1rem;
   background-color:green;
 }
-p.margin
+.put
 {
   background-color:yellow;
 	margin-top:100px;
@@ -226,12 +232,13 @@ p.margin
 	margin-right:0px;
 	margin-left:90%;
 }
-q.margin
+.margin
 {
-   background-color:yellow;
+  background-color:yellow;
 	margin-top:100px;
 	margin-bottom:100px;
 	margin-right:90%;
 	margin-left:0;
 }
+ 
 </style>
