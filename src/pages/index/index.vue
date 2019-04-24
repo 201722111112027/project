@@ -4,6 +4,7 @@
     一大批新书即将上线
     </i-notice-bar>
     <i-input i-class="put" :value="value5" placeholder="平凡世界" />
+    <i-button i-class="out" @click="handleClick" type="success" shape="circle" size="small">小尺寸</i-button>
     <swiper
       :indicator-dots="indicatorDots"
       :autoplay="autoplay"
@@ -140,16 +141,10 @@ export default {
       // throw {message: 'custom test'}
     },
     transt(){
-      log.console("123")
       wx.navigateTo({
-        url: '/pages/classification/main'
+        url: '/pages/pingfanshijie/main'
       })
-    },
-    click(){
-      wx.navigateTo({
-        url: '/pages/xidian/main'
-      })
-    },
+    }
   },
 
   created () {
@@ -231,14 +226,6 @@ div >>> .no-border {
 	margin-bottom:100px;
 	margin-right:0px;
 	margin-left:90%;
-}
-.margin
-{
-  background-color:yellow;
-	margin-top:100px;
-	margin-bottom:100px;
-	margin-right:90%;
-	margin-left:0;
 }
  
 </style>
