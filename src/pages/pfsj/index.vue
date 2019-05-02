@@ -1,19 +1,65 @@
 <template>
   <div class="counter-warp">
-    <map
-  id="map"
-  longitude="113.324520"
-  latitude="23.099994"
-  scale="14"
-  :controls="controls"
-  bindcontroltap="controltap"
-  :markers="markers"
-  bindmarkertap="markertap"
-  :polyline="polyline"
-  @regionchange="regionchange"
-  show-location
-  style="width: 100%; height: 100%;"
-></map>
+    <i-panel>
+    <view class="setting">
+    <i-cell-group class="setting1">
+<i-cell title="第一部 第一章" is-link></i-cell>
+    <i-cell title="第一部 第二章" is-link></i-cell>
+    <i-cell title="第一部 第三章" is-link></i-cell>
+    <i-cell title="第一部 第四章" is-link></i-cell>
+    <i-cell title="第一部 第五章" is-link></i-cell>
+    <i-cell title="第一部 第六章" is-link></i-cell>
+    <i-cell title="第一部 第七章" is-link></i-cell>
+    <i-cell title="第一部 第八章" is-link></i-cell>
+    <i-cell title="第一部 第九章" is-link></i-cell>
+    <i-cell title="第一部 第十章" is-link></i-cell>
+    <i-cell title="第一部 第十一章" is-link></i-cell>
+    <i-cell title="第一部 第十二章" is-link></i-cell>
+    <i-cell title="第一部 第十三章" is-link></i-cell>
+    <i-cell title="第一部 第十四章" is-link></i-cell>
+    <i-cell title="第一部 第十五章" is-link></i-cell>
+    <i-cell title="第一部 第十六章" is-link></i-cell>
+    <i-cell title="第一部 第十七章" is-link></i-cell>
+    <i-cell title="第一部 第十八章" is-link></i-cell>
+    <i-cell title="第一部 第十九章" is-link></i-cell>
+    <i-cell title="第一部 第二十章" is-link></i-cell>
+    <i-cell title="第一部 第二十一章" is-link></i-cell>
+    <i-cell title="第一部 第二十二章" is-link></i-cell>
+    <i-cell title="第一部 第二十三章" is-link></i-cell>
+    <i-cell title="第一部 第二十四章" is-link></i-cell>
+    <i-cell title="第一部 第二十五章" is-link></i-cell>
+    <i-cell title="第一部 第二十六章" is-link></i-cell>
+    <i-cell title="第一部 第二十七章" is-link></i-cell>
+    <i-cell title="第一部 第二十八章" is-link></i-cell>
+    <i-cell title="第一部 第二十九章" is-link></i-cell>
+    <i-cell title="第一部 第三十章" is-link></i-cell>
+    <i-cell title="第一部 第三十一章" is-link></i-cell>
+    <i-cell title="第一部 第三十二章" is-link></i-cell>
+    <i-cell title="第一部 第三十三章" is-link></i-cell>
+    <i-cell title="第一部 第三十四章" is-link></i-cell>
+    <i-cell title="第一部 第三十五章" is-link></i-cell>
+    <i-cell title="第一部 第三十六章" is-link></i-cell>
+    <i-cell title="第一部 第三十七章" is-link></i-cell>
+    <i-cell title="第一部 第三十八章" is-link></i-cell>
+    <i-cell title="第一部 第三十九章" is-link></i-cell>
+    <i-cell title="第一部 第四十章" is-link></i-cell>
+    <i-cell title="第一部 第四十一章" is-link></i-cell>
+    <i-cell title="第一部 第四十二章" is-link></i-cell>
+    <i-cell title="第一部 第四十三章" is-link></i-cell>
+    <i-cell title="第一部 第四十四章" is-link></i-cell>
+    <i-cell title="第一部 第四十五章" is-link></i-cell>
+    <i-cell title="第一部 第四十六章" is-link></i-cell>
+    <i-cell title="第一部 第四十七章" is-link></i-cell>
+    <i-cell title="第一部 第四十八章" is-link></i-cell>
+    <i-cell title="第一部 第四十九章" is-link></i-cell>
+    <i-cell title="第一部 第五十章" is-link></i-cell>
+    <i-cell title="第一部 第五十一章" is-link></i-cell>
+    <i-cell title="第一部 第五十二章" is-link></i-cell>
+    <i-cell title="第一部 第五十三章" is-link></i-cell>
+    <i-cell title="第一部 第五十四章" is-link></i-cell>
+    </i-cell-group>
+    </view>
+    </i-panel>
   </div>
 </template>
 
@@ -25,58 +71,20 @@ export default {
   computed: {
     data () {
       return {
-        markers: [{
-      iconPath: '/static/images/marker.png',
-      id: 0,
-      latitude: 23.099994,
-      longitude: 113.324520,
-      width: 50,
-      height: 50
-    }],
-    polyline: [{
-      points: [{
-        longitude: 113.3245211,
-        latitude: 23.10229
-      }, {
-        longitude: 113.324520,
-        latitude: 23.21229
-      }],
-      color: '#FF0000DD',
-      width: 2,
-      dottedLine: true
-    }],
-    controls: [{
-      id: 1,
-      iconPath: '/static/images/location.png',
-      position: {
-        left: 0,
-        top: 300 - 50,
-        width: 50,
-        height: 50
-      },
-      clickable: true
-    }]
-      }
-    }
-  },
-  methods: {
-    regionchange(e) {
-    console.log(e.type)
-  },
-  markertap(e) {
-    console.log(e.markerId)
-  },
-  controltap(e) {
-    console.log(e.controlId)
-  }
+      } 
+    },
+   
   }
 }
 </script>
 
 <style>
 .counter-warp {
-  text-align: center;
-  margin-top: 100px;
+  margin-top: 2px;
+  
+}
+.setting1{
+  background-color:	Peru
 }
 .home {
   display: inline-block;

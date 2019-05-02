@@ -10,7 +10,7 @@
         <i-grid-icon>
             <image src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1952041692,3359063424&fm=58&bpow=180&bpoh=240" />
         </i-grid-icon>
-        <i-grid-label  >武动乾坤</i-grid-label>
+        <i-grid-label >武动乾坤</i-grid-label>
     </i-grid-item>
     <i-grid-item @click="transt" i-class="no-border">
         <i-grid-icon>
