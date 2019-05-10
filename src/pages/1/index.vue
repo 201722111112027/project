@@ -1,7 +1,9 @@
 <template>
   <div class="counter-warp">
-                         第一章
-    １９７５年二、三月间，一个平平常常的日子，细蒙蒙的雨丝夹着一星半点的雪花，正纷纷淋淋地向大地飘洒着。时令已快到惊蛰，雪当然再不会存留，往往还没等落地，就已经消失得无踪无影了。黄土高原严寒而漫长的冬天看来就要过去，但那真正温暖的春天还远远地没有到来。
+     <div text-align="center">第一章</div>
+     <div class="home" >
+     <p>年二、三月间，一个平平常常的日子，细蒙蒙的雨丝夹着一星半点的雪花，正纷纷淋淋地向大地飘洒着。</p>
+   时令已快到惊蛰，雪当然再不会存留，往往还没等落地，就已经消失得无踪无影了。黄土高原严寒而漫长的冬天看来就要过去，但那真正温暖的春天还远远地没有到来。
 
 在这样雨雪交加的日子里，如果没有什么紧要事，人们宁愿一整天足不出户。因此，县城的大街小巷倒也比平时少了许多嘈杂。街巷背阴的地方。冬天残留的积雪和冰溜子正在雨点的敲击下蚀化，石板街上到处都漫流着肮脏的污水。风依然是寒冷的。空荡荡的街道上，有时会偶尔走过来一个乡下人，破毡帽护着脑门，胳膊上挽一筐子土豆或萝卜，有气无力地呼唤着买主。唉，城市在这样的日子里完全丧失了生气，变得没有一点可爱之处了。
 
@@ -42,6 +44,7 @@
 但他对她的一切毫无所知。因为班上一天点一次名，他现在只知道她的名字叫郝红梅。
 
 她大概也只知道他的名字叫孙少平吧？
+</div>
   </div>
 </template>
 
@@ -66,13 +69,17 @@ export default {
 <style>
 .counter-warp {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 1px;
+  background-color:burlywood
 }
 .home {
   display: inline-block;
-  margin: 100px auto;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 5px 10px;
   color: blue;
   border: 1px solid blue;
+  text-align:"left"
 }
+p {text-indent: 2em;}
 </style>

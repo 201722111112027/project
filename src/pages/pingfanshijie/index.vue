@@ -33,7 +33,7 @@
         </view>
     </i-panel>
     <i-panel >
-    <text class="text" text-indent=-5em>  青年，青年！无论受怎样的挫折和打击，都要咬着牙冠挺住，因为你们完全有机会重建生活；只要不灰心丧气，每一次挫折，只不过是通往新境界的一块普通绊脚石而绝不会置人于死命。                         ——路遥</text>
+    <text class="text">  青年，青年！无论受怎样的挫折和打击，都要咬着牙冠挺住，因为你们完全有机会重建生活；只要不灰心丧气，每一次挫折，只不过是通往新境界的一块普通绊脚石而绝不会置人于死命。                         ——路遥</text>
     </i-panel>
     
   <i-cell-group>
@@ -140,7 +140,8 @@ div >>>.no-boder{
   text-indent:5em;
    margin-top:0pt;
    width:580rpx;
-   height:120rpx
+   height:120rpx;
+   text-indent: 2em
 }
 .mulu{
   color:GoldEnrod;

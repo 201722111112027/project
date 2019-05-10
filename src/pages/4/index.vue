@@ -1,7 +1,8 @@
 <template>
   <div class="counter-warp">
-                    第四章
-   星期五，孙少平请了半天假，来到城关粮站，拿润叶姐给他的五十斤粮票，按粗细粮比例，买了二十斤白面和三十斤玉米面。这年头，五十斤粮票可不是一个小数字啊！
+                   <div text-align="center">第四章</div>
+                    <div class="home">
+   <p>星期五，孙少平请了半天假，来到城关粮站，拿润叶姐给他的五十斤粮票，按粗细粮比例</p>，买了二十斤白面和三十斤玉米面。这年头，五十斤粮票可不是一个小数字啊！
 
 润叶姐塞给他的那个小纸包里，还有三十元钱，买完这些粮，还剩了拾元，他准备拿这钱给祖母买点止痛片和眼药水，然后再给自己换一点学校大灶上的菜票。
 
@@ -78,7 +79,7 @@
 二哥，看！那不是姐夫？推车子的那个！看，还是爸爸给姐夫往车子上装土哩……”
 
 少平也看见了。他感到眼前一阵发黑，便悄悄拉了妹妹一把，说：咱们回……”
-  </div>
+  </div> </div>
 </template>
 
 <script>
@@ -102,13 +103,17 @@ export default {
 <style>
 .counter-warp {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 1px;
+  background-color:burlywood
 }
 .home {
   display: inline-block;
-  margin: 100px auto;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 5px 10px;
   color: blue;
   border: 1px solid blue;
+  text-align:"left"
 }
+p {text-indent: 2em;}
 </style>

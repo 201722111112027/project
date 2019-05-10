@@ -1,7 +1,8 @@
 <template>
   <div class="counter-warp">
-                            第三章
-    惊蛰过后很长一段日子，尽管节令也已经又越过了春分，但连绵的黄土高原依然是冬天的面貌。山野里草木枯黑，一片荒凉。只是夜晚的时间倒明显地缩短了。
+                          <div text-align="center">第三章</div>
+                          <div class="home">
+    <p>惊蛰过后很长一段日子，尽管节令也已经又越过了春分，但连绵的黄土高原依然是冬天的面貌</p>。山野里草木枯黑，一片荒凉。只是夜晚的时间倒明显地缩短了。
 
 一直到了四月初，清明节的前一天，突然刮起了一场铺天盖地的大黄风。风刮得天昏地暗，甚至大白天都要在房子里点亮灯。根据往常的经验，这场黄风是天气变暖的先兆。是的，从节令来看，也应该有些春天的迹象了。
 
@@ -162,6 +163,7 @@
 少平还没有反应过来这是怎么一回事，润叶姐就已经消失在坡下的拐弯处了。
 
 他呆呆地立在黑暗中，把手伸进自己的衣袋，紧紧地捏住了那个小纸包。他鼻子一酸，眼睛顿时被泪水模糊了……
+  </div> 
   </div>
 </template>
 
@@ -184,13 +186,17 @@ export default {
 <style>
 .counter-warp {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 1px;
+  background-color:burlywood
 }
 .home {
   display: inline-block;
-  margin: 100px auto;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 5px 10px;
   color: blue;
   border: 1px solid blue;
+  text-align:"left"
 }
+p {text-indent: 2em;}
 </style>

@@ -19,7 +19,7 @@
     </block>
   </swiper>
     <i-grid i-class="no-border">
-    <i-grid-item @click="transt" i-class="no-border">
+    <i-grid-item @click="xianxia" i-class="no-border">
         <i-grid-icon>
             <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=606397164,1884706880&fm=111&gp=0.jpg" />
         </i-grid-icon>
@@ -68,7 +68,7 @@
     </view>
     </i-panel> -->
     <i-panel title="图书热门推荐">
-    <i-card @click="transt" title="平凡世界" extra="路遥" thumb="http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg">
+    <i-card @click="luyao" title="平凡世界" extra="路遥" thumb="http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg">
     <view slot="content">《平凡的世界》是中国作家路遥创作的一部百万字的小说。这是一部全景式地表现中国当代城乡社会生活的长篇小说，全书共三部。1986年12月首次出版。</view>
     <view slot="footer">推荐度：98%</view>
     </i-card>
@@ -140,9 +140,14 @@ export default {
       console.log('clickHandle:', ev)
       // throw {message: 'custom test'}
     },
-    transt(){
+    luyao(){
       wx.navigateTo({
         url: '/pages/pingfanshijie/main'
+      })
+    },
+    xianxia(){
+      wx.navigateTo({
+        url: '/pages/xianxia/main'
       })
     }
   },
