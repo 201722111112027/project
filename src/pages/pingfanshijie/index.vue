@@ -37,7 +37,7 @@
     </i-panel>
     
   <i-cell-group>
-    <i-cell title="目录  20章" is-link url="/pages/pfsj/main"></i-cell>
+    <i-cell title="目录  20章" is-link url="/pages/book1/pfsj/main"></i-cell>
 </i-cell-group>
 <i-panel>
   <view class="button">

@@ -45,6 +45,26 @@
 
 她大概也只知道他的名字叫孙少平吧？
 </div>
+<i-grid i-class="no-border">
+    <i-grid-item @click="xianxia" i-class="no-border">
+        <i-grid-icon>
+            <image src="static/images/last.png" />
+        </i-grid-icon>
+        <i-grid-label  >上一章</i-grid-label>
+    </i-grid-item>
+    <i-grid-item i-class="no-border">
+        <i-grid-icon>
+            <image src="static/images/list.png" />
+        </i-grid-icon>
+        <i-grid-label>目录</i-grid-label>
+    </i-grid-item>
+    <i-grid-item i-class="no-border">
+        <i-grid-icon>
+            <image src="static/images/next.png" />
+        </i-grid-icon>
+        <i-grid-label>下一章</i-grid-label>
+    </i-grid-item>
+    </i-grid>
   </div>
 </template>
 
@@ -61,12 +81,19 @@ export default {
     }
   },
   methods: {
-    
+    xianxia(){
+      wx.navigateTo({
+        url: '/pages/xianxia/main'
+      })
+    }
   }
 }
 </script>
 
 <style>
+.no-border {
+  border-width: 0pt;
+}
 .counter-warp {
   text-align: center;
   margin-top: 1px;
