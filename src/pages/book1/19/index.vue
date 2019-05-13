@@ -122,8 +122,27 @@
 她实在无法忍受了！
 
 她突然决定很快再回一次双水村。这次她无论如何要见到少安——哪怕他再躲着不回家，她也要破开脸皮到山里找到他……
-
-                   </div>
+</div>
+<i-grid i-class="no-border">
+    <i-grid-item @click="last" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img5.imgtn.bdimg.com/it/u=2179716670,977437141&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label  >上一章</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="list" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2094031817,2842734087&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>目录</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="next" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img1.imgtn.bdimg.com/it/u=2071479498,4142634719&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>下一章</i-grid-label>
+    </i-grid-item>
+    </i-grid>
   </div>
 </template>
 
@@ -135,17 +154,34 @@ export default {
   computed: {
     data () {
       return {
+    
       }
-       
     }
   },
   methods: {
-    
+    last(){
+      wx.navigateTo({
+        url: '/pages/book1/18/main'
+      })
+    },
+    list(){
+      wx.navigateTo({
+        url: '/pages/book1/pfsj/main'
+      })
+    },
+    next(){
+      wx.navigateTo({
+        url: '/pages/book1/20/main'
+      })
+    }
   }
 }
 </script>
 
 <style>
+.no-border {
+  border-width: 0pt;
+}
 .counter-warp {
   text-align: center;
   margin-top: 1px;
@@ -162,4 +198,3 @@ export default {
 }
 p {text-indent: 2em;}
 </style>
-

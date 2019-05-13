@@ -97,7 +97,27 @@
 孙玉厚老两口大受感动地看着他们这个最小的孩子，连一句话也说不出来了。按说，她是家里最小的娃娃，应该娇惯一些。可孩子长了这么大，还没给她扯过一件象样的衣服。现在她已经到石圪节上了初中，身上还七长八短地穿着前两年的旧衣服。
 
 孙玉厚难受地从窑里走出来，站在自家的院子里，不停地挖着旱烟袋。他佝偻着高大的身躯，失神地望着东拉河对面黑乎乎的庙坪山。山依然象他年轻时一样，没高一尺，也没低一尺。可他已经老了，也更无能了……
-  </div>
+ </div>
+<i-grid i-class="no-border">
+    <i-grid-item @click="last" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img5.imgtn.bdimg.com/it/u=2179716670,977437141&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label  >上一章</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="list" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2094031817,2842734087&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>目录</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="next" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img1.imgtn.bdimg.com/it/u=2071479498,4142634719&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>下一章</i-grid-label>
+    </i-grid-item>
+    </i-grid>
   </div>
 </template>
 
@@ -109,17 +129,34 @@ export default {
   computed: {
     data () {
       return {
+    
       }
-       
     }
   },
   methods: {
-    
+    last(){
+      wx.navigateTo({
+        url: '/pages/book1/5/main'
+      })
+    },
+    list(){
+      wx.navigateTo({
+        url: '/pages/book1/pfsj/main'
+      })
+    },
+    next(){
+      wx.navigateTo({
+        url: '/pages/book1/7/main'
+      })
+    }
   }
 }
 </script>
 
 <style>
+.no-border {
+  border-width: 0pt;
+}
 .counter-warp {
   text-align: center;
   margin-top: 1px;

@@ -94,6 +94,26 @@
 
 在这以后，只要孙少平看过的书，就借给郝红梅看。无论是他给她借书，还是她给他还书，两个人不约而同地都是悄悄进行的。他们都知道，一个男生和一个女生这样过分亲密的交往，如果让班里的同学们发现了，会引起什么样的反响——那他们也就别想安宁地过日子了！
                         </div>
+<i-grid i-class="no-border">
+    <i-grid-item @click="last" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img5.imgtn.bdimg.com/it/u=2179716670,977437141&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label  >上一章</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="list" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2094031817,2842734087&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>目录</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="next" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img1.imgtn.bdimg.com/it/u=2071479498,4142634719&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>下一章</i-grid-label>
+    </i-grid-item>
+    </i-grid>
   </div>
 </template>
 
@@ -104,16 +124,35 @@ import store from './store'
 export default {
   computed: {
     data () {
-     
+      return {
+    
+      }
     }
   },
   methods: {
-   
+    last(){
+      wx.navigateTo({
+        url: '/pages/book1/1/main'
+      })
+    },
+    list(){
+      wx.navigateTo({
+        url: '/pages/book1/pfsj/main'
+      })
+    },
+    next(){
+      wx.navigateTo({
+        url: '/pages/book1/3/main'
+      })
+    }
   }
 }
 </script>
 
 <style>
+.no-border {
+  border-width: 0pt;
+}
 .counter-warp {
   text-align: center;
   margin-top: 1px;

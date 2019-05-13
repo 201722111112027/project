@@ -111,7 +111,27 @@
 
 “今儿个这几斤羊肉是我在罐子村买的，刚杀的新羊肉……润叶快吃！”田福堂帮助老婆把一盘羊肉饺子端上炕来，招呼让女儿吃，好象他根本没听见女儿说什么。他只是在女儿不留意的时候，用复杂的眼光瞥了一眼她刚脱在脚地上的那两只令人难堪的泥鞋……
 
-                   </div>
+  </div>
+<i-grid i-class="no-border">
+    <i-grid-item @click="last" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img5.imgtn.bdimg.com/it/u=2179716670,977437141&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label  >上一章</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="list" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2094031817,2842734087&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>目录</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="next" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img1.imgtn.bdimg.com/it/u=2071479498,4142634719&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>下一章</i-grid-label>
+    </i-grid-item>
+    </i-grid>
   </div>
 </template>
 
@@ -123,17 +143,34 @@ export default {
   computed: {
     data () {
       return {
+    
       }
-       
     }
   },
   methods: {
-    
+    last(){
+      wx.navigateTo({
+        url: '/pages/book1/19/main'
+      })
+    },
+    list(){
+      wx.navigateTo({
+        url: '/pages/book1/pfsj/main'
+      })
+    },
+    next(){
+      wx.navigateTo({
+        url: '/pages/book1/21/main'
+      })
+    }
   }
 }
 </script>
 
 <style>
+.no-border {
+  border-width: 0pt;
+}
 .counter-warp {
   text-align: center;
   margin-top: 1px;

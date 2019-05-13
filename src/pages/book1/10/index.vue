@@ -176,7 +176,27 @@
 “没说，就叫你一定来一下……”少平说完，就引着两个孩子回家去了。
 
 孙少安愣了半天。他忧伤地走到院子东头那棵杏树前，手轻轻抠着树皮，抬起头望着满树雪白的杏花，陷入到往事中去了……
-                   </div>
+           </div>
+<i-grid i-class="no-border">
+    <i-grid-item @click="last" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img5.imgtn.bdimg.com/it/u=2179716670,977437141&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label  >上一章</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="list" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2094031817,2842734087&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>目录</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="next" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img1.imgtn.bdimg.com/it/u=2071479498,4142634719&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>下一章</i-grid-label>
+    </i-grid-item>
+    </i-grid>
   </div>
 </template>
 
@@ -188,17 +208,34 @@ export default {
   computed: {
     data () {
       return {
+    
       }
-       
     }
   },
   methods: {
-    
+    last(){
+      wx.navigateTo({
+        url: '/pages/book1/9/main'
+      })
+    },
+    list(){
+      wx.navigateTo({
+        url: '/pages/book1/pfsj/main'
+      })
+    },
+    next(){
+      wx.navigateTo({
+        url: '/pages/book1/11/main'
+      })
+    }
   }
 }
 </script>
 
 <style>
+.no-border {
+  border-width: 0pt;
+}
 .counter-warp {
   text-align: center;
   margin-top: 1px;

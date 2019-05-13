@@ -113,7 +113,28 @@
 这次故事调讲，他和晓霞都得了二等奖，把他们县的文化馆长高兴得眉开眼笑！
 
 孙少平大开了一回眼界，然后带着无数新的印象以及一张奖状和一套“毛选”，回到了县城。到星期六的时候，他又带着从黄原城里买来的一点稀罕东西，回了一趟双水村。在地区期间，每天的伙食补助就够他吃了，因此他就把哥哥给他的十元钱，除过王满银，给全家人都买了点礼物：奶奶的一包蛋糕，母亲和姐姐一人一双袜子，父亲和哥哥一人一块白毛巾，妹妹的一线红方格头巾，猫蛋和狗蛋的半斤水果糖……
-  </div></div>
+  </div>
+<i-grid i-class="no-border">
+    <i-grid-item @click="last" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img5.imgtn.bdimg.com/it/u=2179716670,977437141&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label  >上一章</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="list" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2094031817,2842734087&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>目录</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="next" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img1.imgtn.bdimg.com/it/u=2071479498,4142634719&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>下一章</i-grid-label>
+    </i-grid-item>
+    </i-grid>
+  </div>
 </template>
 
 <script>
@@ -124,17 +145,34 @@ export default {
   computed: {
     data () {
       return {
+    
       }
-       
     }
   },
   methods: {
-    
+    last(){
+      wx.navigateTo({
+        url: '/pages/book1/17/main'
+      })
+    },
+    list(){
+      wx.navigateTo({
+        url: '/pages/book1/pfsj/main'
+      })
+    },
+    next(){
+      wx.navigateTo({
+        url: '/pages/book1/19/main'
+      })
+    }
   }
 }
 </script>
 
 <style>
+.no-border {
+  border-width: 0pt;
+}
 .counter-warp {
   text-align: center;
   margin-top: 1px;

@@ -64,7 +64,27 @@
 在这期间，班长顾养民对她渐渐热情起来了。玩球中间，常常在有意和无意之间，对她微微一笑，并且得到球后，往往都抛给了她。在班上一些集体活动中，他也有意把她和他分在一块，瞅空子和她说这说那……郝红梅的精神突然被一缕强烈的阳光照亮了。她梦寐以求的就是象顾养民这样的人。顾养民的父亲是他们黄原地区师范专科的副校长，母亲是地区建筑公司的工程师，他祖父又是这个县远近闻名的老中医大夫。养民从小跟祖父长大，一直在原西县上学。他学习好，又是班长，年岁虽然比她才大一岁，但就象一个教师一样有风度。现在，这个全班女生常羡慕地谈论的人，竟然对她如此青睐，真叫她有点受宠若惊。和出众的顾养民一比较，孙少平一下子变得暗淡失色了。她于是想方设法和顾养民接近，和他攀谈，和他一块打篮球，让他喜欢她。相反，她对孙少平产生了一种厌烦的情绪，千方百计躲避和他说话交往。
 
 郝红梅看得出来，这学期开学后，孙少平一直找机会总想和她说话，但她都有意回避了。叫人生气的是，今天下午她正兴致勃勃地和养民他们打篮球，这个不识高低的人，竟然让她给他传球！她故意不给他，而把球给了顾养民。她要以此让他明白：她现在已经和班长好上了……
-                   </div>
+ </div>
+<i-grid i-class="no-border">
+    <i-grid-item @click="last" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img5.imgtn.bdimg.com/it/u=2179716670,977437141&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label  >上一章</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="list" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2094031817,2842734087&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>目录</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="next" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img1.imgtn.bdimg.com/it/u=2071479498,4142634719&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>下一章</i-grid-label>
+    </i-grid-item>
+    </i-grid>
   </div>
 </template>
 
@@ -76,17 +96,34 @@ export default {
   computed: {
     data () {
       return {
+    
       }
-       
     }
   },
   methods: {
-    
+    last(){
+      wx.navigateTo({
+        url: '/pages/book1/16/main'
+      })
+    },
+    list(){
+      wx.navigateTo({
+        url: '/pages/book1/pfsj/main'
+      })
+    },
+    next(){
+      wx.navigateTo({
+        url: '/pages/book1/18/main'
+      })
+    }
   }
 }
 </script>
 
 <style>
+.no-border {
+  border-width: 0pt;
+}
 .counter-warp {
   text-align: center;
   margin-top: 1px;
@@ -103,4 +140,3 @@ export default {
 }
 p {text-indent: 2em;}
 </style>
-

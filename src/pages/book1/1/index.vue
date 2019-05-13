@@ -46,21 +46,21 @@
 她大概也只知道他的名字叫孙少平吧？
 </div>
 <i-grid i-class="no-border">
-    <i-grid-item @click="xianxia" i-class="no-border">
+    <i-grid-item @click="last" i-class="no-border">
         <i-grid-icon>
-            <image src="static/images/last.png" />
+            <image src="http://img5.imgtn.bdimg.com/it/u=2179716670,977437141&fm=26&gp=0.jpg" />
         </i-grid-icon>
         <i-grid-label  >上一章</i-grid-label>
     </i-grid-item>
-    <i-grid-item i-class="no-border">
+    <i-grid-item @click="list" i-class="no-border">
         <i-grid-icon>
-            <image src="static/images/list.png" />
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2094031817,2842734087&fm=26&gp=0.jpg" />
         </i-grid-icon>
         <i-grid-label>目录</i-grid-label>
     </i-grid-item>
-    <i-grid-item i-class="no-border">
+    <i-grid-item @click="next" i-class="no-border">
         <i-grid-icon>
-            <image src="static/images/next.png" />
+            <image src="http://img1.imgtn.bdimg.com/it/u=2071479498,4142634719&fm=26&gp=0.jpg" />
         </i-grid-icon>
         <i-grid-label>下一章</i-grid-label>
     </i-grid-item>
@@ -81,9 +81,19 @@ export default {
     }
   },
   methods: {
-    xianxia(){
+    last(){
       wx.navigateTo({
-        url: '/pages/xianxia/main'
+        url: '/pages/book1/pfsj/main'
+      })
+    },
+    list(){
+      wx.navigateTo({
+        url: '/pages/book1/pfsj/main'
+      })
+    },
+    next(){
+      wx.navigateTo({
+        url: '/pages/book1/2/main'
       })
     }
   }

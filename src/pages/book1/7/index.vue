@@ -67,7 +67,28 @@
 现在，妇女主任已经从哭咽河的小桥上过来了，少平看见她头发梳得油光——通常都是用木梳蘸着自己的吐沫梳成这个样子的。而且又穿起了结婚时的那件已经很旧的红绸袄；因为罩衣太短，那棉袄的红边在下面露出一圈，非常扎眼，二妈这身打扮，说明她今晚上又要在公众面前露脸了。果然，她站定对少平说：“今晚上，公社会战指挥部要在学校院子里开批判会，你不参加？……人家叫我领导着布置会场，我刚把碗搁下就……唉，你姐夫……”她叹了一口气，表示了一种同情和痛惜，让少平知道她终究也是自家人。少平对她说：“你忙你的，我要到金波家去哩。”
 
 他冷淡地对他二妈打了个招呼，就转过身走了。
-  </div></div>
+  </div>
+<i-grid i-class="no-border">
+    <i-grid-item @click="last" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img5.imgtn.bdimg.com/it/u=2179716670,977437141&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label  >上一章</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="list" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2094031817,2842734087&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>目录</i-grid-label>
+    </i-grid-item>
+    <i-grid-item @click="next" i-class="no-border">
+        <i-grid-icon>
+            <image src="http://img1.imgtn.bdimg.com/it/u=2071479498,4142634719&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label>下一章</i-grid-label>
+    </i-grid-item>
+    </i-grid>
+  </div>
 </template>
 
 <script>
@@ -78,17 +99,34 @@ export default {
   computed: {
     data () {
       return {
+    
       }
-       
     }
   },
   methods: {
-    
+    last(){
+      wx.navigateTo({
+        url: '/pages/book1/6/main'
+      })
+    },
+    list(){
+      wx.navigateTo({
+        url: '/pages/book1/pfsj/main'
+      })
+    },
+    next(){
+      wx.navigateTo({
+        url: '/pages/book1/8/main'
+      })
+    }
   }
 }
 </script>
 
 <style>
+.no-border {
+  border-width: 0pt;
+}
 .counter-warp {
   text-align: center;
   margin-top: 1px;
