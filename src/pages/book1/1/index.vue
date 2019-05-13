@@ -1,5 +1,6 @@
 <template>
   <div class="counter-warp">
+     <div class="title" text-align="left">第一部</div>
      <div text-align="center">第一章</div>
      <div class="home" >
      <p>年二、三月间，一个平平常常的日子，细蒙蒙的雨丝夹着一星半点的雪花，正纷纷淋淋地向大地飘洒着。</p>
@@ -116,7 +117,12 @@ export default {
   padding: 5px 10px;
   color: blue;
   border: 1px solid blue;
-  text-align:"left"
+  text-align:left
+}
+.title{
+  font-size: 80rpx;
+  color: red;
+  text-align: left
 }
 p {text-indent: 2em;}
 </style>

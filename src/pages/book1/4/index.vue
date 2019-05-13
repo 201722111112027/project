@@ -151,7 +151,7 @@ export default {
   padding: 5px 10px;
   color: blue;
   border: 1px solid blue;
-  text-align:"left"
+  text-align:left
 }
 p {text-indent: 2em;}
 </style>
