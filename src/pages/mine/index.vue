@@ -14,7 +14,7 @@
     <i-cell title="我的足迹" is-link url="/pages/logs/main"></i-cell>
     <i-cell title="我的账户" is-link url="/pages/logs/main"></i-cell>
     <i-cell title="今日免费" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="设    置" is-link url="/pages/shezhi/main"></i-cell>
+    <i-cell title="设    置" is-link url="/pages/shezhi/shezhi/main"></i-cell>
 </i-cell-group>
   </div>
 </template>

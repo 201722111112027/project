@@ -4,7 +4,7 @@
     "pages/logs/main",
     "pages/counter/main",
     "pages/mine/main",
-    "pages/map/main",
+    "pages/sheft/main",
     "pages/xianxia/main",
     "pages/pingfanshijie/main",
     "pages/book1/pfsj/main",
@@ -81,7 +81,9 @@
     "pages/book1/71/main",
     "pages/book1/72/main",
     "pages/book1/73/main",
-    "pages/shezhi/main"
+    "pages/shezhi/shezhi/main",
+    "pages/shezhi/yuedu/main"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -102,7 +104,7 @@
       "selectedIconPath": "static/tabs/home-active.png"
     }, {
       "text": "书架",
-      "pagePath": "pages/map/main",
+      "pagePath": "pages/sheft/main",
       "iconPath": "static/tabs/2.png",
       "selectedIconPath": "static/tabs/map-active.png"
     }, {

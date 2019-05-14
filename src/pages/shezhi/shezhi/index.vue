@@ -1,13 +1,7 @@
 <template>
   <div>
-    <view class="userinfo">
-    <view class="userinfo-avatar">
-    <open-data type="userAvatarUrl"></open-data>
-    </view>
-    <open-data type="userNickName"></open-data>
-    </view>
     <i-cell-group>
-      <i-cell title="阅读设置" is-link url="/pages/logs/main"></i-cell>
+      <i-cell title="阅读设置" is-link url="/pages/shezhi/yuedu/main"></i-cell>
       <i-cell title="夜间模式">
         <switch slot="footer" checked />
     </i-cell>

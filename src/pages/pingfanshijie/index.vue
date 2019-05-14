@@ -32,18 +32,37 @@
         <text class="fensi">77万</text> -->
         </view>
     </i-panel>
-    <i-panel >
-    <text class="text">  青年，青年！无论受怎样的挫折和打击，都要咬着牙冠挺住，因为你们完全有机会重建生活；只要不灰心丧气，每一次挫折，只不过是通往新境界的一块普通绊脚石而绝不会置人于死命。                         ——路遥</text>
+    <i-panel class="panel">
+    <text class="text"> 青年，青年！无论受怎样的挫折和打击，都要咬着牙冠挺住，因为你们完全有机会重建生活；只要不灰心丧气，每一次挫折，只不过是通往新境界的一块普通绊脚石而绝不会置人于死命。                        ——路遥</text>
     </i-panel>
-    
-  <i-cell-group>
+   <i-grid i-class="no-border">
+    <i-grid-item @click="start" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557854121615&di=b6b001204cc993e8bd6684863bf2dd86&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic2%2Fcover%2F00%2F32%2F00%2F5810d7724ac54_610.jpg" />
+        </i-grid-icon>
+        <i-grid-label  >免费试读</i-grid-label>
+    </i-grid-item>
+     <i-grid-item @click="start" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557854373039&di=3f1b9e375b73757c545add8fc9e40a03&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic2%2Fcover%2F00%2F35%2F45%2F5811a08bbb569_610.jpg" />
+        </i-grid-icon>
+        <i-grid-label>全本下载</i-grid-label>
+    </i-grid-item>
+    <i-grid-item i-class="no-border">
+        <i-grid-icon>
+            <image src="http://pic.51yuansu.com/pic2/cover/00/32/93/58110d765aa63_610.jpg" />
+        </i-grid-icon>
+        <i-grid-label>加入书架</i-grid-label>
+    </i-grid-item>
+    </i-grid> 
+  <!-- <i-cell-group>
     <i-cell title="目录  20章" is-link url="/pages/book1/pfsj/main"></i-cell>
 </i-cell-group>
 <i-panel>
   <view class="button">
 <button @click="handleClick" type="primary" style="color:red" >加入书架</button>
 </view>
-</i-panel>
+</i-panel> -->
   </div>
 </template>
 
@@ -77,8 +96,10 @@ export default {
             'starIndex2' : index
         })
     },
-    handleClick(){
-       
+    start(){
+      wx.navigateTo({
+        url: '/pages/book1/pfsj/main'
+      })
     }
   }
 }
@@ -87,6 +108,8 @@ export default {
 <style scoped>
 div >>>.no-boder{
   border-width: 0pt;
+  background-color: brown;
+  height: 20px;
 }
 .setting{
   background-color:	DarkKhaki;
@@ -107,7 +130,6 @@ div >>>.no-boder{
   font-family: microsoft yahei;
   font-weight: normal;
   letter-spacing: 1.5px;
-  row-spacing:2px;
    margin-left: 40px;
    margin-top: 5px;
 }
@@ -140,8 +162,8 @@ div >>>.no-boder{
   text-indent:5em;
    margin-top:0pt;
    width:580rpx;
-   height:120rpx;
-   text-indent: 2em
+   height:240rpx;
+   text-indent: 2em;
 }
 .mulu{
   color:GoldEnrod;
@@ -150,5 +172,14 @@ div >>>.no-boder{
 }
 .button{
   background-color:red;
+}
+p {text-indent: 2em;}
+.panel{
+  color:Orange;
+  text-indent:5em;
+   margin-top:0pt;
+   width:580rpx;
+   height:240rpx;
+   text-indent: 2em;
 }
 </style>

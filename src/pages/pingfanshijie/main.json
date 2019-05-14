@@ -1,5 +1,5 @@
 {
-    "navigationBarTitleText": "我的周边",
+    "navigationBarTitleText": "平凡世界",
     "usingComponents": {
         "i-button": "../../../static/dist/button/index",
         "i-card": "../../../static/dist/card/index",
