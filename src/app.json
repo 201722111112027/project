@@ -15,7 +15,7 @@
     "pages/book1/5/main",
     "pages/book1/6/main",
     "pages/book1/7/main",
-    "pages/8/book1/main",
+    "pages/book1/8/main",
     "pages/book1/9/main",
     "pages/book1/10/main",
     "pages/book1/11/main",
@@ -80,8 +80,8 @@
     "pages/book1/70/main",
     "pages/book1/71/main",
     "pages/book1/72/main",
-    "pages/book1/73/main"
-
+    "pages/book1/73/main",
+    "pages/shezhi/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
