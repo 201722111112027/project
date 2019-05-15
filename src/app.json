@@ -5,8 +5,7 @@
     "pages/counter/main",
     "pages/mine/main",
     "pages/sheft/main",
-    "pages/xianxia/main",
-    "pages/pingfanshijie/main",
+    "pages/book1/index/main",
     "pages/book1/pfsj/main",
     "pages/book1/1/main",
     "pages/book1/2/main",
@@ -81,8 +80,18 @@
     "pages/book1/71/main",
     "pages/book1/72/main",
     "pages/book1/73/main",
-    "pages/shezhi/shezhi/main",
-    "pages/shezhi/yuedu/main"
+    "pages/wode/shezhi/shezhi/main",
+    "pages/wode/shezhi/yuedu/main",
+    "pages/shucheng/book2/index/main",
+    "pages/shucheng/book3/index/main",
+    "pages/shucheng/book4/index/main",
+    "pages/shucheng/book5/index/main",
+    "pages/shucheng/grid1/xianxia/main",
+    "pages/shucheng/grid2/xianxia/main",
+    "pages/shucheng/grid3/xianxia/main",
+    "pages/shucheng/grid4/xianxia/main",
+    "pages/shucheng/grid5/xianxia/main",
+    "pages/shucheng/grid6/xianxia/main"
 
   ],
   "window": {

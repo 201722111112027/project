@@ -1,23 +1,25 @@
 <template>
   <div>
-    <view class="userinfo">
-    <view class="userinfo-avatar">
-    <open-data type="userAvatarUrl"></open-data>
-    </view>
-    <open-data type="userNickName"></open-data>
-    </view>
     <i-cell-group>
-      <i-cell title="接收通知">
+      <i-cell title="阅读设置" is-link url="/pages/wode/shezhi/yuedu/main"></i-cell>
+      <i-cell title="夜间模式">
         <switch slot="footer" checked />
     </i-cell>
-    <i-cell title="我的收藏" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="我的足迹" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="我的账户" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="今日免费" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="设    置" is-link url="/pages/wode/shezhi/shezhi/main"></i-cell>
+    <i-cell title="主    题" is-link url="/pages/logs/main"></i-cell>
+    <i-cell title="字    体" is-link url="/pages/logs/main"></i-cell>
+    <i-cell title="插    件" is-link url="/pages/logs/main"></i-cell>
+    <i-cell title="个人阅读偏好" is-link url="/pages/logs/main"></i-cell>
+    <i-cell title="个人资料编辑" is-link url="/pages/logs/main"></i-cell>
+    <i-cell title="账户与安全" is-link url="/pages/logs/main"></i-cell>
+    <i-cell title="消息通知" is-link url="/pages/logs/main"></i-cell>
+    <i-cell title="备份与同步" is-link url="/pages/logs/main"></i-cell>
+    <i-cell title="清除缓存" is-link url="/pages/logs/main"></i-cell>
+    <i-cell title="检查更新" is-link url="/pages/logs/main"></i-cell>
+    <i-cell title="关于小程序" is-link url="/pages/logs/main"></i-cell>
 </i-cell-group>
   </div>
 </template>
+
 <script>
 import card from '@/components/card'
 
