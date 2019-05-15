@@ -71,7 +71,7 @@ export default {
   methods: {
     xiuzhen(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/book1/index/main'
       })
     },
     zhuwu(){

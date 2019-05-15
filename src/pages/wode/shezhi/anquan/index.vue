@@ -1,21 +1,18 @@
 <template>
   <div>
     <i-cell-group>
-      <i-cell title="阅读设置" is-link url="/pages/shezhi/yuedu/main"></i-cell>
-      <i-cell title="夜间模式">
+    <i-cell title="手机号绑定" >
+      <text>绑定有惊喜哟</text>
+         <text></text>
+    </i-cell>
+    <i-cell title="修改密码" >
+    </i-cell>
+     <i-cell title="软件加密">
         <switch slot="footer" checked />
     </i-cell>
-    <i-cell title="主    题" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="字    体" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="插    件" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="个人阅读偏好" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="个人资料编辑" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="账户与安全" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="消息通知" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="备份与同步" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="清除缓存" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="检查更新" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="关于小程序" is-link url="/pages/logs/main"></i-cell>
+    <i-cell title="安全管理" >
+      <text>关闭</text>
+    </i-cell>
 </i-cell-group>
   </div>
 </template>

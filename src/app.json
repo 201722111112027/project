@@ -81,17 +81,18 @@
     "pages/book1/72/main",
     "pages/book1/73/main",
     "pages/wode/shezhi/shezhi/main",
+    "pages/wode/shezhi/anquan/main",
     "pages/wode/shezhi/yuedu/main",
     "pages/shucheng/book2/index/main",
     "pages/shucheng/book3/index/main",
     "pages/shucheng/book4/index/main",
     "pages/shucheng/book5/index/main",
     "pages/shucheng/grid1/xianxia/main",
-    "pages/shucheng/grid2/xianxia/main",
-    "pages/shucheng/grid3/xianxia/main",
-    "pages/shucheng/grid4/xianxia/main",
-    "pages/shucheng/grid5/xianxia/main",
-    "pages/shucheng/grid6/xianxia/main"
+    "pages/shucheng/grid2/dushi/main",
+    "pages/shucheng/grid3/xuanhuan/main",
+    "pages/shucheng/grid4/aiqing/main",
+    "pages/shucheng/grid5/mingzhu/main",
+    "pages/shucheng/grid6/wanben/main"
 
   ],
   "window": {

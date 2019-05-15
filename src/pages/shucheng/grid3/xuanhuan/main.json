@@ -1,8 +1,8 @@
 {
-  "navigationBarTitleText": "西点世界",
+  "navigationBarTitleText": "玄幻之城",
   "usingComponents": {
-    "i-card": "../../../static/dist/card/index",
-    "i-panel": "../../../static/dist/panel/index",
-    "i-notice-bar": "../../../static/dist/notice-bar/index"
+    "i-card": "../../../../static/dist/card/index",
+    "i-panel": "../../../../static/dist/panel/index",
+    "i-notice-bar": "../../../../static/dist/notice-bar/index"
 }
 }
