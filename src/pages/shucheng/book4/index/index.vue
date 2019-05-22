@@ -33,7 +33,7 @@
         </view>
     </i-panel>
     <i-panel class="panel">
-    <text class="text"> 青年，青年！无论受怎样的挫折和打击，都要咬着牙冠挺住，因为你们完全有机会重建生活；只要不灰心丧气，每一次挫折，只不过是通往新境界的一块普通绊脚石而绝不会置人于死命。                        ——路遥</text>
+    <text class="text">早晨，我睁眼醒来翻身下床，又变成了原来那个浅薄无知、善于伪装的滑稽角色。胆小鬼连幸福都会惧怕，碰到棉花都会受伤，有时也会被幸福所伤。趁着还没有受伤，我想就这样赶快分道扬镳。我又放出了惯用的逗笑烟幕弹。   ————太宰治</text>
     </i-panel>
    <i-grid i-class="no-border">
     <i-grid-item @click="start" class="test">
@@ -75,13 +75,13 @@ export default {
     return {
      starIndex2 : 4.5,
      imgUrls:[
-        'http://img1.imgtn.bdimg.com/it/u=2049799998,1577767969&fm=26&gp=0.jpg',
-        'http://img0.imgtn.bdimg.com/it/u=2057511425,2529990695&fm=26&gp=0.jpg',
-        'http://img5.imgtn.bdimg.com/it/u=1726489621,789915892&fm=26&gp=0.jpg',
-        'http://img1.imgtn.bdimg.com/it/u=1145045993,3394112898&fm=11&gp=0.jpg',
-        'http://img2.imgtn.bdimg.com/it/u=3211702520,2203896700&fm=26&gp=0.jpg',
-        'http://img2.imgtn.bdimg.com/it/u=2937290376,1303931150&fm=11&gp=0.jpg',
-        'http://img1.imgtn.bdimg.com/it/u=2975002125,4179887462&fm=26&gp=0.jpg'
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558503280515&di=cb6a6ee9be8085a0145952c3f38a4668&imgtype=0&src=http%3A%2F%2F02imgmini.eastday.com%2Fmobile%2F20190325%2F2019032516_a27fa8781b46481e911f440d08fc1091_8554_cover_mwpm_03201609.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558503281689&di=a66dfb57c56cf163f3e8b3ed901bc794&imgtype=0&src=http%3A%2F%2Fs8.sinaimg.cn%2Fmw690%2F0066wqsGzy76vBLCrbh07%26690',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558503281685&di=5a83e17e7c3683a8d0376ee62d624996&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201709%2F30%2F20170930152457_eUtji.thumb.700_0.jpeg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558503369651&di=076bbdd74676127220082ca36b3f0084&imgtype=0&src=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FDCUA7Libl5wOZoXTWP8nuyu87cqrpgsDSzre9UOS2z59vdEXhgoKqzM07abZfaibzVKTic9ibMjvkxvCyI7YqD5TBA%2F640%3Fwx_fmt%3Djpeg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559098087&di=78c6b300160969ad43a23235fa2bc36d&imgtype=jpg&er=1&src=http%3A%2F%2Fs15.sinaimg.cn%2Fmw690%2F006zervZzy77a37OySi2e%26amp%3B690',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559098159&di=84df22b901bf97803c57e8fb80cf4a34&imgtype=jpg&er=1&src=http%3A%2F%2Fi860.photobucket.com%2Falbums%2Fab166%2Fxhcmilan%2Fningenshikaku%2F17.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559098179&di=844bb7b3bbf69fa768d49b8c6b9adb60&imgtype=jpg&er=1&src=http%3A%2F%2Fwx2.sinaimg.cn%2Fwap720%2Fc25788b7ly1frwtc963m0j21120kuwo8.jpg'
       ],
       indicatorDots: false,
       autoplay: true,
@@ -98,7 +98,7 @@ export default {
     },
     start(){
       wx.navigateTo({
-        url: '/pages/book1/pfsj/main'
+        url: '/pages/shucehng/book4/rjshg/main'
       })
     }
   }

@@ -33,7 +33,8 @@
         </view>
     </i-panel>
     <i-panel class="panel">
-    <text class="text"> 青年，青年！无论受怎样的挫折和打击，都要咬着牙冠挺住，因为你们完全有机会重建生活；只要不灰心丧气，每一次挫折，只不过是通往新境界的一块普通绊脚石而绝不会置人于死命。                        ——路遥</text>
+    <text class="text"> 唐末一个逃难者在严寒之夜被扯进了一扇柴门，宋代一个书生落水被路人救起，这可能就算我们的祖先，一场灭绝性的征剿不知被谁劝阻，一所最小的私塾在某个荒村开张。这些事情，也可能远远的与我有关，因此我们区区五尺之躯，不知道沉淀了多少善良，文化是一种感恩，我们要懂得把他们完全唤醒”
+——余秋雨</text>
     </i-panel>
    <i-grid i-class="no-border">
     <i-grid-item @click="start" class="test">
@@ -75,13 +76,13 @@ export default {
     return {
      starIndex2 : 4.5,
      imgUrls:[
-        'http://img1.imgtn.bdimg.com/it/u=2049799998,1577767969&fm=26&gp=0.jpg',
-        'http://img0.imgtn.bdimg.com/it/u=2057511425,2529990695&fm=26&gp=0.jpg',
-        'http://img5.imgtn.bdimg.com/it/u=1726489621,789915892&fm=26&gp=0.jpg',
-        'http://img1.imgtn.bdimg.com/it/u=1145045993,3394112898&fm=11&gp=0.jpg',
-        'http://img2.imgtn.bdimg.com/it/u=3211702520,2203896700&fm=26&gp=0.jpg',
-        'http://img2.imgtn.bdimg.com/it/u=2937290376,1303931150&fm=11&gp=0.jpg',
-        'http://img1.imgtn.bdimg.com/it/u=2975002125,4179887462&fm=26&gp=0.jpg'
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559098343&di=08a4297f0909f25201215a11a0a580fa&imgtype=jpg&er=1&src=http%3A%2F%2Fbook.img.ireader.com%2Fgroup6%2FM00%2F64%2F58%2FCmQUNlZxKWyET7bnAAAAAEuAA8k030172610.jpg%3Fv%3D8v0VrD2-',
+        'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2076386763,3164677909&fm=11&gp=0.jpg',
+        'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1531787081,3113287356&fm=26&gp=0.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559098378&di=0cd6622427fb30bbec1b7774308739f8&imgtype=jpg&er=1&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171204%2F41815c46e7b346ae8ed3e8956975aacc.jpeg',
+        'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2070827847,4188947884&fm=26&gp=0.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558503748016&di=290d9d44e74686d89fbfacdab40b14a5&imgtype=0&src=http%3A%2F%2Fi.ce.cn%2Fintl%2Fzhuanti%2Fydylx%2Fcscq_286187%2Ftp%2F201604%2F11%2FW020160413721089383801.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558503748013&di=49debdcef4daef5f6e7e82e09e5b2097&imgtype=0&src=http%3A%2F%2Fp2.pccoo.cn%2Fbbs%2F20141106%2F2014110616261353746620.jpg'
       ],
       indicatorDots: false,
       autoplay: true,
@@ -98,7 +99,7 @@ export default {
     },
     start(){
       wx.navigateTo({
-        url: '/pages/book1/pfsj/main'
+        url: '/pages/shucheng/book5/shanhezhishu/main'
       })
     }
   }

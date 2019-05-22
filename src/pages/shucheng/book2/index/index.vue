@@ -33,7 +33,7 @@
         </view>
     </i-panel>
     <i-panel class="panel">
-    <text class="text"> 青年，青年！无论受怎样的挫折和打击，都要咬着牙冠挺住，因为你们完全有机会重建生活；只要不灰心丧气，每一次挫折，只不过是通往新境界的一块普通绊脚石而绝不会置人于死命。                        ——路遥</text>
+    <text class="text"> 天下只有两种人。比如一串葡萄到手，一种人挑最好的先吃，另一种人把最好的留到最后吃。照例第一种人应该乐观，因为他每吃一颗都是吃剩的葡萄里最好的；第二种人应该悲观，因为他每吃一颗都是吃剩的葡萄里最坏的。不过事实却适得其反，缘故是第二种人还有希望，第一种人只有回忆。——钱钟书 </text>
     </i-panel>
    <i-grid i-class="no-border">
     <i-grid-item @click="start" class="test">
@@ -75,13 +75,12 @@ export default {
     return {
      starIndex2 : 4.5,
      imgUrls:[
-        'http://img1.imgtn.bdimg.com/it/u=2049799998,1577767969&fm=26&gp=0.jpg',
-        'http://img0.imgtn.bdimg.com/it/u=2057511425,2529990695&fm=26&gp=0.jpg',
-        'http://img5.imgtn.bdimg.com/it/u=1726489621,789915892&fm=26&gp=0.jpg',
-        'http://img1.imgtn.bdimg.com/it/u=1145045993,3394112898&fm=11&gp=0.jpg',
-        'http://img2.imgtn.bdimg.com/it/u=3211702520,2203896700&fm=26&gp=0.jpg',
-        'http://img2.imgtn.bdimg.com/it/u=2937290376,1303931150&fm=11&gp=0.jpg',
-        'http://img1.imgtn.bdimg.com/it/u=2975002125,4179887462&fm=26&gp=0.jpg'
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558501394217&di=ca887e847de6187695bd3c4fb073aae4&imgtype=0&src=http%3A%2F%2Fimgbdb3.bendibao.com%2Fbjbdb%2F20162%2F2%2F2016221100215.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558501394213&di=abd6c87a7e26120a7395e250e2a88526&imgtype=0&src=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2Ft8ibUxVnMTLOntZqzcrPLHmbRmhNRJJ01DDJ8rs4fiasJxibTlZAd1ibRvpJ9qS2LEAdkl6kXXiacOtvWCed1VAbmeA%2F640%3Fwx_fmt%3Djpeg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558501431945&di=2e4957a735616c25cfbc1ef9faf17f28&imgtype=jpg&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fitbbs%2F1309%2F18%2Fc23%2F25830793_1379479893078_500x500.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558501425837&di=6a36c7b92b4025f20d0a030636f4724c&imgtype=0&src=http%3A%2F%2Fwww.230189.com%2Ftupian%2Fjingdianyulu%2F151118%2Fweichengjingdianyulu.jpg',
+        'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1565252170,2799680776&fm=15&gp=0.jpg',
+        
       ],
       indicatorDots: false,
       autoplay: true,
@@ -98,7 +97,7 @@ export default {
     },
     start(){
       wx.navigateTo({
-        url: '/pages/book1/pfsj/main'
+        url: 'pages/shucheng/book2/weicheng/main'
       })
     }
   }

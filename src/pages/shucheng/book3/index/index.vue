@@ -33,7 +33,8 @@
         </view>
     </i-panel>
     <i-panel class="panel">
-    <text class="text"> 青年，青年！无论受怎样的挫折和打击，都要咬着牙冠挺住，因为你们完全有机会重建生活；只要不灰心丧气，每一次挫折，只不过是通往新境界的一块普通绊脚石而绝不会置人于死命。                        ——路遥</text>
+    <text class="text"> 因为我既不生活在过去，也不生活在未来，我只有现在，它才是我感兴趣的。如果你能永远停留在现在，那你将是最幸福的人。你会发现沙漠里有生命，发现天空中有星星，发现士兵们打仗是因为战争是人类生活的一部分。生活就是一个节日，是一场盛大庆典。因为生活永远是，也仅仅是我们现在经历的这一刻。
+——保罗·戈埃罗</text>
     </i-panel>
    <i-grid i-class="no-border">
     <i-grid-item @click="start" class="test">
@@ -75,13 +76,13 @@ export default {
     return {
      starIndex2 : 4.5,
      imgUrls:[
-        'http://img1.imgtn.bdimg.com/it/u=2049799998,1577767969&fm=26&gp=0.jpg',
-        'http://img0.imgtn.bdimg.com/it/u=2057511425,2529990695&fm=26&gp=0.jpg',
-        'http://img5.imgtn.bdimg.com/it/u=1726489621,789915892&fm=26&gp=0.jpg',
-        'http://img1.imgtn.bdimg.com/it/u=1145045993,3394112898&fm=11&gp=0.jpg',
-        'http://img2.imgtn.bdimg.com/it/u=3211702520,2203896700&fm=26&gp=0.jpg',
-        'http://img2.imgtn.bdimg.com/it/u=2937290376,1303931150&fm=11&gp=0.jpg',
-        'http://img1.imgtn.bdimg.com/it/u=2975002125,4179887462&fm=26&gp=0.jpg'
+        'http://www.baidu.com/baidu.php?url=0f0000jeTx0mG_-ZTZ7jwROLqYBSm-i_B199vZ0JFm7ztqW73u1eChI4zTHv4G6WbLLsS1DYnYJYwlCVUNGj6uidCY2_ryRHJjrrVkGjM-ZIOiYIlTp9HFhZVy6ZyZQlCXo_wUiB1qG6teJugFHftK4Ac5ZfMypTifCAxJXgX_7XyFUUFkwJ6MyccVdKE1COq-JBWiN53uTndwvwzs.DR_NR2Ar5Od66kqhrPQnYPg-gYePBcnxuWooecnxuWWi1PjN0egoHPbMeqJIZ0lplPWjt5u9SAEjtJt5dzmx9L3x-EsOjvmx5v3x9lT5MY3xgdsOjksOQGsSL1sOjbsOjkls8WxfikX1BsuTEyBl7h6qYH77h24SU-CIMy9n1jv3hPh1IYePheWgguugktISOIbzIheovGYTjGo_H7IxuYSrHkzUEZk_llLHpypjDHGVQP7iOi1JHukyAp7W_ePl60.U1Yk0ZDqknZwt_MukroA4oEjdJeassKspynqnfKY5THKYxQFvTHJk8pesqp8s_n0pyYqn1mL0ATqTZP8TsKdpHY0TA-b5HDv0APGujY1P1D0Ugfqn103rNtznj640AVG5HD0TMfqnHc40ANGujY0mhbqnW0Yg1nsn-t1njn0Uynqn7ts0Z7spyfqn0Kkmv-b5H00ThIYmyTqn0KVpyfqn0KGTgfqn0K9mWYsg100ugFM5H00TZ0qn0K8IM0qna3snj0snj0sn0KVIZ0qn0KbuAqs5H00ThCqn0KhIjYs0ZKC5H00ULnqn0KBI1Ys0A4Y5H00TLCq0A71gv-bm1d8Tzd8p6KYIgnqPHczrj0kPHT1n1RzP1Dvrjn4P6Kzug7Y5HDdPH6YrHc3rjDYPWb0Tv-b5Hb4mvRzuj--PAn4PjwbPjm0mLPV5HuDPW61PRuaP1KKrRD3Pj00mynqnfKsUWYs0Z7VIjYs0Z7VT1Ys0ZGY5H00UyPxuMFEUHYsg100uA78IyF-gLK_my4GuZnqn7ts0ZK9I7qhUA7M5H00uAPGujYs0ANYpyfqQHD0mgPsmvnqn0KdTA-8mvnqn0KkUymqn0KhmLNY5H00uMGC5H00uh7Y5H00XMK_Ignqn0K9uAu_myTqnfK_uhnqn0KEIjYs0AqzTZfqnanscznsc10WnansQW0snj0snans0APzm1YknH0Lr0&word=%E7%89%A7%E7%BE%8A%E5%B0%91%E5%B9%B4%E5%A5%87%E5%B9%BB%E4%B9%8B%E6%97%85',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559097752&di=a6843f28f8c141d0d2afeaf2fef78ab5&imgtype=jpg&er=1&src=http%3A%2F%2Fimagev2.xmcdn.com%2Fgroup43%2FM05%2F17%2F7E%2FwKgKjVr5vr2Q686kAAhgMvG9vso00.jpeg%21op_type%3D5%26amp%3Bupload_type%3Dalbum%26amp%3Bdevice_type%3Dios%26amp%3Bname%3Dlarge_pop%26amp%3Bstrip%3D0%26amp%3Bquality%3D7',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558503077913&di=ccdd05911f63dc06947149184d73bbf1&imgtype=0&src=http%3A%2F%2Fimg.mp.sohu.com%2Fq_70%2Cc_zoom%2Cw_640%2Fupload%2F20170806%2Fb4deb9d7057c4b19bc8b378833d227cf_th.jpg',
+        'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=226005011,3489169462&fm=26&gp=0.jpg',
+        'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=949938761,4082951173&fm=26&gp=0.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558503077911&di=185ae87e08d787ed5b621476d7e63a3e&imgtype=0&src=http%3A%2F%2Fwww.mkaq.org%2FUploadFiles%2Fkyxy%2F2016%2F2%2F201602221501589104.jpg',
+        'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1167003355,4231207220&fm=26&gp=0.jpg'
       ],
       indicatorDots: false,
       autoplay: true,
@@ -98,7 +99,7 @@ export default {
     },
     start(){
       wx.navigateTo({
-        url: '/pages/book1/pfsj/main'
+        url: '/pages/shucheng/book3/muyangshaonian/main'
       })
     }
   }
