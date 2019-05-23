@@ -46,6 +46,14 @@
         </i-grid-icon>
         <i-grid-label >三生三世步生莲</i-grid-label>
     </i-grid-item>
+
+    <!-- <i-grid-item @click="transt" i-class="no-border">
+        <i-grid-icon>
+            <image src={{item.img}} />
+        </i-grid-icon>
+        <i-grid-label >{{item.name}}</i-grid-label>
+    </i-grid-item> -->
+
     </i-grid>
     </i-panel>
 </i-head>
@@ -73,26 +81,19 @@ export default {
   },
 
   methods: {
-    bindViewTap () {
-      const url = '../logs/main'
-      if (mpvuePlatform === 'wx') {
-        mpvue.switchTab({ url })
-      } else {
-        mpvue.navigateTo({ url })
-      }
-    },
-    handleChange ({ detail }) {
+   onLoad: function(options) {
+      var dataTemp = decodeURIComponent(options.dataList);//函数可把字符串作为 URI 组件进行解码。
+      var Traces = JSON.parse(dataTemp);//航一页传过来的json字符串转化成json数组  物流信息进度
       this.setData({
-        current: detail.key
+        Traces: Traces
       })
-    },
-    handleChangeScroll (event) {
-      this.current_scroll = event.mp.detail.key
-    },
-    clickHandle (ev) {
-      console.log('clickHandle:', ev)
-      // throw {message: 'custom test'}
-    }
+  },
+  transt(){
+    wx.navigateTo({
+      url:'item.url'
+
+    })
+  }
   },
 
   created () {

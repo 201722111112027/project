@@ -58,15 +58,7 @@
         <i-grid-label>完本</i-grid-label>
     </i-grid-item>
 </i-grid>
- <!-- <i-panel title="热门推荐">
-    <view class="top-padding">
-    <view v-for="item in shops" :key='item' class="top-padding">
-    <i-card  :title="item.name" :extra="item.type" thumb="/static/images/shop.png">
-    <view slot="content">{{item.introduction}}</view>
-    <view slot="footer">{{item.address}}</view>
-    </i-card></view>
-    </view>
-    </i-panel> -->
+
     <i-panel title="图书热门推荐">
     <i-card @click="luyao" title="平凡世界" extra="路遥" thumb="http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg">
     <view slot="content">《平凡的世界》是中国作家路遥创作的一部百万字的小说。这是一部全景式地表现中国当代城乡社会生活的长篇小说，全书共三部。1986年12月首次出版。</view>

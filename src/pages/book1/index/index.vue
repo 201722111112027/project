@@ -13,15 +13,7 @@
       </swiper-item>
     </block>
   </swiper>
-    <!-- <i-panel><view class="setting" bindtap='jumpLogin'>
-      <image class="image1" src='http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg' style="width:130rpx;height:180rpx;"></image>   
-      <text class="text" style="padding:7px;line-height:17px">
-      <text class="first">《平凡世界》\n</text>
-      <text class="sceond">路遥|史诗巨作\n\n</text>
-      <text class="third">9.7分</text>
-   </text>
-   </view>
-    </i-panel> -->
+   
     <i-panel><view class="pingfen">
       <i-rate 
             :change="onChange2" 
@@ -48,7 +40,7 @@
         </i-grid-icon>
         <i-grid-label>全本下载</i-grid-label>
     </i-grid-item>
-    <i-grid-item i-class="no-border">
+    <i-grid-item @click="logisiticsGZFn" i-class="no-border">
         <i-grid-icon>
             <image src="http://pic.51yuansu.com/pic2/cover/00/32/93/58110d765aa63_610.jpg" />
         </i-grid-icon>
@@ -90,17 +82,23 @@ export default {
     }
   },
   methods: {
-    onChange2(e){
-        const index = e.detail.index;
-        this.setData({
-            'starIndex2' : index
-        })
-    },
     start(){
       wx.navigateTo({
         url: '/pages/book1/pfsj/main'
       })
-    }
+    },
+    logisiticsGZFn: function(e) {
+    var Traces= [{//JSON模拟数据，项目中可以换取真实的
+      "img": "http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg",
+      "name": "平凡世界",
+      "url": "/pages/book1/pfsj/main"
+    },
+    ];
+     var dataList=encodeURIComponent(JSON.stringify(Traces));//函数可把字符串作为 URI 组件进行编码
+    wx.navigateTo({
+      url: '../../pages/sheft?dataList=' + dataList,//传递参数
+
+    })}
   }
 }
 </script>

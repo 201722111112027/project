@@ -56,14 +56,7 @@
         <i-grid-label>加入书架</i-grid-label>
     </i-grid-item>
     </i-grid> 
-  <!-- <i-cell-group>
-    <i-cell title="目录  20章" is-link url="/pages/book1/pfsj/main"></i-cell>
-</i-cell-group>
-<i-panel>
-  <view class="button">
-<button @click="handleClick" type="primary" style="color:red" >加入书架</button>
-</view>
-</i-panel> -->
+
   </div>
 </template>
 
