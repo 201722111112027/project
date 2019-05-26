@@ -134,57 +134,57 @@ export default {
     },
     luyao(){
       wx.navigateTo({
-        url: '/pages/book1/index/main'
+        url: 'pages/book1/index/main'
       })
     },
     qianzhongsh(){
       wx.navigateTo({
-        url: '/pages/shucheng/book2/index/main'
+        url: 'pages/book2/index/main'
       })
     },
     baoluo(){
       wx.navigateTo({
-        url: '/pages/shucheng/book3/index/main'
+        url: 'pages/book3/index/main'
       })
     },
      taizaizhi(){
       wx.navigateTo({
-        url: '/pages/shucheng/book4/index/main'
+        url: 'pages/book4/index/main'
       })
     },
      yuqiuyu(){
       wx.navigateTo({
-        url: '/pages/shucheng/book5/index/main'
+        url: 'pages/book5/index/main'
       })
     },
     xianxia(){
       wx.navigateTo({
-        url: '/pages/shucheng/grid1/xianxia/main'
+        url: 'pages/grid1/xianxia/main'
       })
     },
     dushi(){
       wx.navigateTo({
-        url: '/pages/shucheng/grid2/dushi/main'
+        url: 'pages/grid2/dushi/main'
       })
     },
     xuanhuan(){
       wx.navigateTo({
-        url: '/pages/shucheng/grid3/xuanhuan/main'
+        url: '/pages/grid3/xuanhuan/main'
       })
     },
     aiqing(){
       wx.navigateTo({
-        url: '/pages/shucheng/grid4/aiqing/main'
+        url: '/pages/grid4/aiqing/main'
       })
     },
     mingzhu(){
       wx.navigateTo({
-        url: '/pages/shucheng/grid5/mingzhu/main'
+        url: 'pages/grid5/mingzhu/main'
       })
     },
     wanben(){
       wx.navigateTo({
-        url: '/pages/shucheng/grid6/wanben/main'
+        url: 'pages/grid6/wanben/main'
       })
     }
   },
