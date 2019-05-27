@@ -3,7 +3,7 @@
     <i-panel>
     <view class="setting">
     <i-cell-group class="setting1">
-    <i-cell title="第一部 第一章" is-link url="/pages/book1/1/main"></i-cell>
+    <i-cell title="" is-link url="/pages/book1/1/main"></i-cell>
     <i-cell title="第一部 第二章" is-link url="/pages/book1/2/main"></i-cell>
     <i-cell title="第一部 第三章" is-link url="/pages/book1/3/main"></i-cell>
     <i-cell title="第一部 第四章" is-link url="/pages/book1/4/main"></i-cell>

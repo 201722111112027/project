@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div>
     <i-notice-bar icon="systemprompt" loop>
     一大批新书即将上线
@@ -134,37 +134,37 @@ export default {
     },
     luyao(){
       wx.navigateTo({
-        url: 'pages/book1/index/main'
+        url: '/pages/book1/index/main'
       })
     },
     qianzhongsh(){
       wx.navigateTo({
-        url: 'pages/book2/index/main'
+        url: '/pages/book2/index/main'
       })
     },
     baoluo(){
       wx.navigateTo({
-        url: 'pages/book3/index/main'
+        url: '/pages/book3/index/main'
       })
     },
      taizaizhi(){
       wx.navigateTo({
-        url: 'pages/book4/index/main'
+        url: '/pages/book4/index/main'
       })
     },
      yuqiuyu(){
       wx.navigateTo({
-        url: 'pages/book5/index/main'
+        url: '/pages/book5/index/main'
       })
     },
     xianxia(){
       wx.navigateTo({
-        url: 'pages/grid1/xianxia/main'
+        url: '/pages/grid1/xianxia/main'
       })
     },
     dushi(){
       wx.navigateTo({
-        url: 'pages/grid2/dushi/main'
+        url: '/pages/grid2/dushi/main'
       })
     },
     xuanhuan(){
@@ -179,12 +179,12 @@ export default {
     },
     mingzhu(){
       wx.navigateTo({
-        url: 'pages/grid5/mingzhu/main'
+        url: '/pages/grid5/mingzhu/main'
       })
     },
     wanben(){
       wx.navigateTo({
-        url: 'pages/grid6/wanben/main'
+        url: '/pages/grid6/wanben/main'
       })
     }
   },
