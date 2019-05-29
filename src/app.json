@@ -155,7 +155,13 @@
     "pages/grid3/xuanhuan/main",
     "pages/grid4/aiqing/main",
     "pages/grid5/mingzhu/main",
-    "pages/grid6/wanben/main"
+    "pages/grid6/wanben/main",
+    "pages/shujia/bushenglian/main",
+    "pages/shujia/dazhuzai/main",
+    "pages/shujia/doupo/main",
+    "pages/shujia/shilitaohua/main",
+    "pages/shujia/wudong/main",
+    "pages/shujia/zhenshangshu/main"
 
   ],
   "window": {

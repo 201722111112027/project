@@ -65,4 +65,5 @@ export default {
   color: blue;
   border: 1px solid blue;
 }
+p {size: 50px;}
 </style>

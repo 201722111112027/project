@@ -40,21 +40,14 @@
         </i-grid-icon>
         <i-grid-label>全本下载</i-grid-label>
     </i-grid-item>
-    <i-grid-item @click="logisiticsGZFn" i-class="no-border">
+    <i-grid-item type="ghost" @click="logisiticsGZFn" i-class="no-border">
         <i-grid-icon>
             <image src="http://pic.51yuansu.com/pic2/cover/00/32/93/58110d765aa63_610.jpg" />
         </i-grid-icon>
         <i-grid-label>加入书架</i-grid-label>
     </i-grid-item>
     </i-grid> 
-  <!-- <i-cell-group>
-    <i-cell title="目录  20章" is-link url="/pages/book1/pfsj/main"></i-cell>
-</i-cell-group>
-<i-panel>
-  <view class="button">
-<button @click="handleClick" type="primary" style="color:red" >加入书架</button>
-</view>
-</i-panel> -->
+ <i-toast id="toast" />
   </div>
 </template>
 
@@ -87,18 +80,13 @@ export default {
         url: '/pages/book1/pfsj/main'
       })
     },
-    logisiticsGZFn: function(e) {
-    var Traces= [{//JSON模拟数据，项目中可以换取真实的
-      "img": "http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg",
-      "name": "平凡世界",
-      "url": "/pages/book1/pfsj/main"
-    },
-    ];
-     var dataList=encodeURIComponent(JSON.stringify(Traces));//函数可把字符串作为 URI 组件进行编码
-    wx.navigateTo({
-      url: '../../pages/sheft?dataList=' + dataList,//传递参数
-
-    })}
+    
+    logisiticsGZFn(){
+      $Toast({
+            content: '成功的提示',
+            type: 'success'
+        });
+    }
   }
 }
 </script>

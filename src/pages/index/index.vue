@@ -3,8 +3,6 @@
     <i-notice-bar icon="systemprompt" loop>
     一大批新书即将上线
     </i-notice-bar>
-    <i-input i-class="put" :value="value5" placeholder="平凡世界" />
-    <i-button i-class="out" @click="handleClick" type="success" shape="circle" size="small">小尺寸</i-button>
     <swiper
       :indicator-dots="indicatorDots"
       :autoplay="autoplay"
@@ -95,7 +93,7 @@ export default {
         'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555729898350&di=0f2e2beb6657de0268d6473eabc0dafc&imgtype=0&src=http%3A%2F%2Fs9.rr.itc.cn%2Fr%2FwapChange%2F20173_31_17%2Fa0zvhl1070816226619.jpg',
         'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555729898346&di=53120318aab25723f14e4c70be9463b8&imgtype=0&src=http%3A%2F%2Fimg.mp.sohu.com%2Fupload%2F20170513%2F8e0db367b0a44076adbdf96271cd8b4b_th.png'
       ],
-       indicatorDots: true,
+       indicatorDots: false,
       autoplay: true,
       interval: 5000,
       duration: 1000,

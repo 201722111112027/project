@@ -13,15 +13,7 @@
       </swiper-item>
     </block>
   </swiper>
-    <!-- <i-panel><view class="setting" bindtap='jumpLogin'>
-      <image class="image1" src='http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg' style="width:130rpx;height:180rpx;"></image>   
-      <text class="text" style="padding:7px;line-height:17px">
-      <text class="first">《平凡世界》\n</text>
-      <text class="sceond">路遥|史诗巨作\n\n</text>
-      <text class="third">9.7分</text>
-   </text>
-   </view>
-    </i-panel> -->
+   
     <i-panel><view class="pingfen">
       <i-rate 
             :change="onChange2" 
@@ -33,7 +25,9 @@
         </view>
     </i-panel>
     <i-panel class="panel">
-    <text class="text"> 天下只有两种人。比如一串葡萄到手，一种人挑最好的先吃，另一种人把最好的留到最后吃。照例第一种人应该乐观，因为他每吃一颗都是吃剩的葡萄里最好的；第二种人应该悲观，因为他每吃一颗都是吃剩的葡萄里最坏的。不过事实却适得其反，缘故是第二种人还有希望，第一种人只有回忆。——钱钟书 </text>
+    <text class="text"> 
+小貂笑了笑，颇有些语重心长地道:“有时候拼命其实并不算么，真正有魄力的，是懂得该隐忍退缩时，便隐忍，即便旁人冷嘲讽，也惘然不顾，那才是真正的勇气与魄力，因为..只有当自己还有命，才有翻盘的一天。
+——天蚕土豆《武动乾坤》</text>
     </i-panel>
    <i-grid i-class="no-border">
     <i-grid-item @click="start" class="test">
@@ -48,13 +42,14 @@
         </i-grid-icon>
         <i-grid-label>全本下载</i-grid-label>
     </i-grid-item>
-    <i-grid-item @click="logisiticsGZFn" i-class="no-border">
+    <i-grid-item type="ghost" @click="logisiticsGZFn" i-class="no-border">
         <i-grid-icon>
             <image src="http://pic.51yuansu.com/pic2/cover/00/32/93/58110d765aa63_610.jpg" />
         </i-grid-icon>
         <i-grid-label>加入书架</i-grid-label>
     </i-grid-item>
     </i-grid> 
+ <i-toast id="toast" />
   </div>
 </template>
 
@@ -67,12 +62,13 @@ export default {
     return {
      starIndex2 : 4.5,
      imgUrls:[
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558501394217&di=ca887e847de6187695bd3c4fb073aae4&imgtype=0&src=http%3A%2F%2Fimgbdb3.bendibao.com%2Fbjbdb%2F20162%2F2%2F2016221100215.jpg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558501394213&di=abd6c87a7e26120a7395e250e2a88526&imgtype=0&src=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2Ft8ibUxVnMTLOntZqzcrPLHmbRmhNRJJ01DDJ8rs4fiasJxibTlZAd1ibRvpJ9qS2LEAdkl6kXXiacOtvWCed1VAbmeA%2F640%3Fwx_fmt%3Djpeg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558501431945&di=2e4957a735616c25cfbc1ef9faf17f28&imgtype=jpg&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fitbbs%2F1309%2F18%2Fc23%2F25830793_1379479893078_500x500.jpg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558501425837&di=6a36c7b92b4025f20d0a030636f4724c&imgtype=0&src=http%3A%2F%2Fwww.230189.com%2Ftupian%2Fjingdianyulu%2F151118%2Fweichengjingdianyulu.jpg',
-        'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1565252170,2799680776&fm=15&gp=0.jpg',
-        
+        'http://img3.imgtn.bdimg.com/it/u=3410246295,3990336484&fm=26&gp=0.jpg',
+        'http://img3.imgtn.bdimg.com/it/u=673653579,3217046682&fm=26&gp=0.jpg',
+        'http://img2.imgtn.bdimg.com/it/u=1931332659,3911584437&fm=26&gp=0.jpg',
+        'http://img3.imgtn.bdimg.com/it/u=2431604102,316046833&fm=26&gp=0.jpg',
+        'http://img4.imgtn.bdimg.com/it/u=1873231635,58718377&fm=26&gp=0.jpg',
+        'http://img4.imgtn.bdimg.com/it/u=213365900,4194968694&fm=26&gp=0.jpg',
+        'http://img4.imgtn.bdimg.com/it/u=344941153,2045528049&fm=26&gp=0.jpg'
       ],
       indicatorDots: false,
       autoplay: true,
@@ -81,17 +77,12 @@ export default {
     }
   },
   methods: {
-    onChange2(e){
-        const index = e.detail.index;
-        this.setData({
-            'starIndex2' : index
-        })
-    },
-    start(){
-      wx.navigateTo({
-        url: '/pages/book2/weicheng/main'
-      })
-    },
+    // // start(){
+    //   wx.navigateTo({
+    //     url: '/pages/book1/pfsj/main'
+    //   })
+    // },
+    
     logisiticsGZFn(){
       $Toast({
             content: '成功的提示',

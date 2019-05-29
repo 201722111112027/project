@@ -1,5 +1,5 @@
 {
-    "navigationBarTitleText": "掌上书城",
+    "navigationBarTitleText": "武动乾坤",
     "usingComponents": {
         "i-button": "../../../static/dist/button/index",
         "i-card": "../../../static/dist/card/index",
@@ -9,6 +9,12 @@
         "i-grid-icon": "../../../static/dist/grid-icon/index",
         "i-grid-label": "../../../static/dist/grid-label/index",
         "i-notice-bar": "../../../static/dist/notice-bar/index",
-        "i-input": "../../../static/dist/input/index"
+        "i-tabs": "../../../static/dist/tabs/index",
+        "i-tab": "../../../static/dist/tab/index",
+        "i-rate": "../../../static/dist/rate/index",
+        "i-tag": "../../../static/dist/tag/index",
+        "i-cell-group": "../../../static/dist/cell-group/index",
+        "i-cell": "../../../static/dist/cell/index",
+        "i-toast": "../../../static/dist/toast/index"
     }
   }
