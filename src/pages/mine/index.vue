@@ -10,10 +10,10 @@
       <i-cell title="接收通知">
         <switch slot="footer" checked />
     </i-cell>
-    <i-cell title="我的收藏" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="我的足迹" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="我的账户" is-link url="/pages/logs/main"></i-cell>
-    <i-cell title="今日免费" is-link url="/pages/logs/main"></i-cell>
+    <i-cell title="我的收藏" is-link url="/pages/wode/shoucang/main"></i-cell>
+    <i-cell title="我的足迹" is-link url="/pages/wode/zuji/main"></i-cell>
+    <i-cell title="我的账户" is-link url="/pages/wode/zhanghu/main"></i-cell>
+    <i-cell title="今日免费" is-link url="/pages/wode/free/main"></i-cell>
     <i-cell title="设    置" is-link url="/pages/wode/shezhi/shezhi/main"></i-cell>
 </i-cell-group>
   </div>

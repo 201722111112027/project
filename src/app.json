@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/main",
-    "pages/logs/main",
     "pages/counter/main",
     "pages/mine/main",
     "pages/sheft/main",
@@ -81,6 +80,9 @@
     "pages/book1/72/main",
     "pages/book1/73/main",
     "pages/wode/shezhi/shezhi/main",
+    "pages/wode/free/main",
+    "pages/wode/zuji/main",
+    "pages/wode/shoucang/main",
     "pages/wode/shezhi/anquan/main",
     "pages/wode/shezhi/yuedu/main",
     "pages/book2/index/main",

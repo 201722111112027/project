@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "i-drawer": "../../../static/dist/drawer/index",
-    "i-button": "../../../static/dist/button/index"
-}
-}
