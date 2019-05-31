@@ -72,27 +72,27 @@ export default {
   methods: {
     xiuzhen(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/grid2/xiuzhen/main'
       })
     },
     zhuwu(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/grid2/zhuwu/main'
       })
     },
     jiuyang(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/grid2/jiuyang/main'
       })
     },
     xiuxian(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/grid2/xiuxian/main'
       })
     },
     yishi(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/grid2/yishi/main'
       })
     },
   },

@@ -14,24 +14,24 @@
     </view>
     </i-panel> -->
     <i-panel title="仙侠类热门推荐">
-    <i-card @click="xiuzhen" title="修真万年归来" extra="缸里有米" thumb="http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg">
-    <view slot="content">修真万年，登临宇宙巅峰，而今带着万载记忆重生繁华都市。这一世我只求顺心而为，守护所爱之人，弥补前世......</view>
+    <i-card @click="xiuzhen" title="致我们暖暖的小时光" extra="赵乾" thumb="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559908504&di=321348aaec92b6cebd7ff908816ea82f&imgtype=jpg&er=1&src=http%3A%2F%2Fimage.ijq.tv%2F201808%2F10%2F15-34-52-40-10.jpg">
+    <view slot="content">司徒末（邢菲 饰）毕业在即，从小便习惯服从安排的她对前途迷茫懵懂，随波逐流地尝试各种安排，总是鼓不起勇气为自己做出选择。因新老校区并校，物理系的高材生顾未易（林一 饰）闯入司徒末的生活......</view>
     <view slot="footer">推荐度：86%</view>
     </i-card>
-    <i-card @click="zhuwu" title="诛天武帝" extra="云七公子" thumb="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=b93945dece1b9d168ac79d67cbdfb4eb/b03533fa828ba61e672c1f2e4134970a314e59f5.jpg">
-    <view slot="content">逆天登仙路，一步一杀劫！萧逝水说你们逆的是天，踏的是路，我逆的是命，踏的是你们的尸骸。</view>
+    <i-card @click="zhuwu" title="致我们单纯的小美好" extra="赵乾" thumb="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559908334&di=cd29c38d475b1968ea892e550703a4bc&imgtype=jpg&er=1&src=http%3A%2F%2Fy.gtimg.cn%2Fmusic%2Fphoto_new%2FT015R640x360M101001oJUbF4fVuh4.jpg">
+    <view slot="content">蠢萌活泼的元气少女陈小希（沈月饰）从学生时代起一直追逐着邻家男孩江辰（胡一天饰）的脚步，面对陈小希的强烈倒追，傲娇高冷的学霸江辰不为所动。大学毕业后......</view>
     <view slot="footer">推荐度：84%</view>
 </i-card>
-<i-card @click="jiuyang" title="九阳至尊" extra="剪刀石头布" thumb="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=7c98a1183bd3d539d53007915bee8235/caef76094b36acaf9baf171a71d98d1000e99c8d.jpg">
-    <view slot="content">修真界人心险恶，意外穿越，奈何重生后是一弃子，身世惨淡，幸偶遇后羿射日神功，收服九阳炉，踏平人间八方......</view>
+<i-card @click="jiuyang" title="我只喜欢你" extra="赵乔一" thumb="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559313913979&di=d7145249aa2263c7cac8f37ed51ec923&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201509%2F04%2F20150904204200_rPwNS.jpeg">
+    <view slot="content">讲述了一个女孩挫折不断的成长，和一个男孩温柔守护的故事。一场懵懂恋爱，成为生命中的一束光，相互照亮彼此，从校服到婚纱，爱让他们成为更好的人。</view>
     <view slot="footer">推荐度：73%</view>
 </i-card>
-<i-card @click="xiuxian" title="修仙狂徒" extra="王小蛮" thumb="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2621851148,2775158789&fm=58&bpow=856&bpoh=1063">
-    <view slot="content">心眼里藏着些花花肠子的街头混混，带着时灵时不灵的残破符法穿越异界，附身世家落魄少爷，且看他如何在......</view>
+<i-card @click="xiuxian" title="微微一笑很倾城" extra="顾漫" thumb="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559314338246&di=cd3dead0459288fd25f1d1ad0e2eb34b&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201610%2F03%2F20161003122639_A4ZfJ.jpeg">
+    <view slot="content">美女学霸贝微微，立志成为游戏工程师，化名“芦苇微微”跻身网游高手，因拒绝上传真实照片而惨遭侠侣“真水无香”无情抛弃，却意外得到江湖第一高手“一笑奈何”的垂青......</view>
     <view slot="footer">推荐度：63%</view>
 </i-card>
-<i-card @click="yishi" title="异世灵武天下" extra="禹枫" thumb="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3033349777,3319507516&fm=58&bpow=600&bpoh=864">
-    <view slot="content">穿越后成为已死的废柴少爷，遇上了神秘老者南叔。为亲者，为红颜，为身边最亲的人，陆少游从废柴一步步踏着...</view>
+<i-card @click="yishi" title="何以笙箫默" extra="顾漫" thumb="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3033349777,3319507516&fm=58&bpow=600&bpoh=864">
+    <view slot="content">学时代的赵默笙，对C大法学系大才子何以琛一见倾心，开朗直率的她“死缠烂打”地倒追，与众不同的方式吸引了以琛的目光，一段纯纯的校园爱情悄悄滋生。然而......</view>
     <view slot="footer">推荐度：93%</view>
 </i-card>
     </i-panel>
@@ -71,27 +71,27 @@ export default {
   methods: {
     xiuzhen(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/grid4/xiuzhen/main'
       })
     },
     zhuwu(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/grid4/zhuwu/main'
       })
     },
     jiuyang(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/grid4/jiuyang/main'
       })
     },
     xiuxian(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/grid4/xiuxian/main'
       })
     },
     yishi(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/grid4/yishi/main'
       })
     },
   },
