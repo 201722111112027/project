@@ -25,7 +25,7 @@
         </view>
     </i-panel>
     <i-panel class="panel">
-    <text class="text"> 苍天死，黄天立，王道不衰青天起;泣血生，浴血唳，怨魂怒魄洒血雨;神识难灭地难葬，湮灭轮回弑天地!众神吟，仙乐起，九天之上诸神聚;厉鬼啸，怨魂嚎，九幽之下阴魂绕;亿万生灵俯称军，百万神魔甘为将!——《神墓》</text>
+    <text class="text">这是一个和多年前一样阳光很好的午后，林荫大道上漂浮着草木的清香，格子路面上印着一家三口长长短短的身影......这样的好天气，适合出门，适合偷拍，适合与你，携手同行。————《何以笙箫默》</text>
     </i-panel>
    <i-grid i-class="no-border">
     <i-grid-item @click="start" class="test">
@@ -59,11 +59,11 @@ export default {
     return {
      starIndex2 : 4.5,
      imgUrls:[
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559311954949&di=9fb825ddaf2fb7785214ba17b4bb1381&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201509%2F09%2F20150909210903_Tt3jR.jpeg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559311954944&di=295f9f2065550c0fe3b3e387a27fb732&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fd5925d4f5699ae341ea5f74ad17f8ca05977c4744a235-rMyq12_fw658',
-        'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3699305582,3596001701&fm=26&gp=0.jpg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559311954937&di=ccb487b3129de38444a259b33568d973&imgtype=0&src=http%3A%2F%2Fimages.17173.com%2F2012%2Fnews%2F2012%2F06%2F21%2Fy0621ff03s.jpg',
-        'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1419968409,310881515&fm=26&gp=0.jpg',
+        'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1403014008,29043806&fm=26&gp=0.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559315031944&di=6fb6e41c95955276ee479d30b1638e1e&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201809%2F02%2F20180902230616_okyjd.thumb.700_0.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559315031942&di=dd43a1d9c64597873ba29d882b201958&imgtype=0&src=http%3A%2F%2Fi.shangc.net%2F2017%2F0616%2F20170616035208854.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559315031941&di=f2e3c6dcc6c6cfe1288a9c73aef2e012&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201502%2F01%2F20150201135710_XEEUQ.jpeg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559315031940&di=832e3ea158caa9246ee07d63a68e2397&imgtype=0&src=http%3A%2F%2Fs1.sinaimg.cn%2Flarge%2F001sAFSTzy7bjJJT7sAc0%26690',
         
       ],
       indicatorDots: false,

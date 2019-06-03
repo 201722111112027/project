@@ -14,23 +14,23 @@
     </view>
     </i-panel> -->
     <i-panel title="仙侠类热门推荐">
-    <i-card @click="xiuzhen" title="修真万年归来" extra="缸里有米" thumb="http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg">
+    <i-card @click="xiuzhen" title="修真万年归来" extra="缸里有米" thumb="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1978681538,2729255002&fm=26&gp=0.jpg">
     <view slot="content">修真万年，登临宇宙巅峰，而今带着万载记忆重生繁华都市。这一世我只求顺心而为，守护所爱之人，弥补前世......</view>
     <view slot="footer">推荐度：86%</view>
     </i-card>
-    <i-card @click="zhuwu" title="诛天武帝" extra="云七公子" thumb="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=b93945dece1b9d168ac79d67cbdfb4eb/b03533fa828ba61e672c1f2e4134970a314e59f5.jpg">
+    <i-card @click="zhuwu" title="诛天武帝" extra="云七公子" thumb="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559316455881&di=1f6629a9a8cb51abea8bc137561ba38e&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180626%2Fa3feb9b12b7f42d98dad6f2bee80eeee.jpeg">
     <view slot="content">逆天登仙路，一步一杀劫！萧逝水说你们逆的是天，踏的是路，我逆的是命，踏的是你们的尸骸。</view>
     <view slot="footer">推荐度：84%</view>
 </i-card>
-<i-card @click="jiuyang" title="九阳至尊" extra="剪刀石头布" thumb="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=7c98a1183bd3d539d53007915bee8235/caef76094b36acaf9baf171a71d98d1000e99c8d.jpg">
+<i-card @click="jiuyang" title="九阳至尊" extra="剪刀石头布" thumb="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559316455881&di=22859135668e1f2854a57b4f69c85cc4&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Ffront%2F24%2Fw494h330%2F20181219%2FWh-F-hqnkypq9787687.jpg">
     <view slot="content">修真界人心险恶，意外穿越，奈何重生后是一弃子，身世惨淡，幸偶遇后羿射日神功，收服九阳炉，踏平人间八方......</view>
     <view slot="footer">推荐度：73%</view>
 </i-card>
-<i-card @click="xiuxian" title="修仙狂徒" extra="王小蛮" thumb="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2621851148,2775158789&fm=58&bpow=856&bpoh=1063">
+<i-card @click="xiuxian" title="修仙狂徒" extra="王小蛮" thumb="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2386873990,1188411093&fm=26&gp=0.jpg">
     <view slot="content">心眼里藏着些花花肠子的街头混混，带着时灵时不灵的残破符法穿越异界，附身世家落魄少爷，且看他如何在......</view>
     <view slot="footer">推荐度：63%</view>
 </i-card>
-<i-card @click="yishi" title="异世灵武天下" extra="禹枫" thumb="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3033349777,3319507516&fm=58&bpow=600&bpoh=864">
+<i-card @click="yishi" title="异世灵武天下" extra="禹枫" thumb="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3367722916,4062242920&fm=26&gp=0.jpg">
     <view slot="content">穿越后成为已死的废柴少爷，遇上了神秘老者南叔。为亲者，为红颜，为身边最亲的人，陆少游从废柴一步步踏着...</view>
     <view slot="footer">推荐度：93%</view>
 </i-card>

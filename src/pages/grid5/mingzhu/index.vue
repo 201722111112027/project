@@ -3,35 +3,26 @@
     <i-notice-bar icon="systemprompt" loop>
     一大批新书即将上线
     </i-notice-bar>
-   
- <!-- <i-panel title="热门推荐">
-    <view class="top-padding">
-    <view v-for="item in shops" :key='item' class="top-padding">
-    <i-card  :title="item.name" :extra="item.type" thumb="/static/images/shop.png">
-    <view slot="content">{{item.introduction}}</view>
-    <view slot="footer">{{item.address}}</view>
-    </i-card></view>
-    </view>
-    </i-panel> -->
-    <i-panel title="仙侠类热门推荐">
-    <i-card @click="xiuzhen" title="修真万年归来" extra="缸里有米" thumb="http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg">
-    <view slot="content">修真万年，登临宇宙巅峰，而今带着万载记忆重生繁华都市。这一世我只求顺心而为，守护所爱之人，弥补前世......</view>
-    <view slot="footer">推荐度：86%</view>
+  
+    <i-panel title="名著推荐">
+    <i-card @click="luyao" title="平凡世界" extra="路遥" thumb="http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg">
+    <view slot="content">《平凡的世界》是中国作家路遥创作的一部百万字的小说。这是一部全景式地表现中国当代城乡社会生活的长篇小说，全书共三部。1986年12月首次出版。</view>
+    <view slot="footer">推荐度：98%</view>
     </i-card>
-    <i-card @click="zhuwu" title="诛天武帝" extra="云七公子" thumb="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=b93945dece1b9d168ac79d67cbdfb4eb/b03533fa828ba61e672c1f2e4134970a314e59f5.jpg">
-    <view slot="content">逆天登仙路，一步一杀劫！萧逝水说你们逆的是天，踏的是路，我逆的是命，踏的是你们的尸骸。</view>
-    <view slot="footer">推荐度：84%</view>
+    <i-card @click="qianzhongsh" title="围城" extra="钱钟书" thumb="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=b93945dece1b9d168ac79d67cbdfb4eb/b03533fa828ba61e672c1f2e4134970a314e59f5.jpg">
+    <view slot="content">《围城》是钱钟书所著的长篇小说，是中国现代文学史上一部风格独特的讽刺小说。被誉为“新儒林外史”。第一版于1947年由上海晨光出版公司出版。故事主要写抗战初期知识分子的群相。</view>
+    <view slot="footer">推荐度：95%</view>
 </i-card>
-<i-card @click="jiuyang" title="九阳至尊" extra="剪刀石头布" thumb="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=7c98a1183bd3d539d53007915bee8235/caef76094b36acaf9baf171a71d98d1000e99c8d.jpg">
-    <view slot="content">修真界人心险恶，意外穿越，奈何重生后是一弃子，身世惨淡，幸偶遇后羿射日神功，收服九阳炉，踏平人间八方......</view>
-    <view slot="footer">推荐度：73%</view>
+<i-card @click="baoluo" title="牧羊少年奇幻之旅" extra="保罗·柯艾略" thumb="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=7c98a1183bd3d539d53007915bee8235/caef76094b36acaf9baf171a71d98d1000e99c8d.jpg">
+    <view slot="content">《牧羊少年奇幻之旅》是巴西作家保罗·柯艾略创作的长篇小说，首次出版于1988年。该小说运用富含哲理和诗意的语言讲述了牧羊少年圣地亚哥追寻宝藏的奇幻冒险故事，具有启发性和励志意义。</view>
+    <view slot="footer">推荐度：96%</view>
 </i-card>
-<i-card @click="xiuxian" title="修仙狂徒" extra="王小蛮" thumb="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2621851148,2775158789&fm=58&bpow=856&bpoh=1063">
-    <view slot="content">心眼里藏着些花花肠子的街头混混，带着时灵时不灵的残破符法穿越异界，附身世家落魄少爷，且看他如何在......</view>
-    <view slot="footer">推荐度：63%</view>
+<i-card @click="taizaizhi" title="人间失格" extra="太宰治" thumb="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2621851148,2775158789&fm=58&bpow=856&bpoh=1063">
+    <view slot="content">《人间失格》以“我”看到叶藏的三张照片后的感想开头，中间是叶藏的三篇手记，而三篇手记与照片对应，分别介绍了叶藏幼年、青年和壮年时代的经历，描述了叶藏是如何一步一步走向丧失为人资格的道路的。 [1] </view>
+    <view slot="footer">推荐度：97%</view>
 </i-card>
-<i-card @click="yishi" title="异世灵武天下" extra="禹枫" thumb="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3033349777,3319507516&fm=58&bpow=600&bpoh=864">
-    <view slot="content">穿越后成为已死的废柴少爷，遇上了神秘老者南叔。为亲者，为红颜，为身边最亲的人，陆少游从废柴一步步踏着...</view>
+<i-card @click="yuqiuyu" title="山河之书" extra="余秋雨" thumb="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3033349777,3319507516&fm=58&bpow=600&bpoh=864">
+    <view slot="content">《山河之书》是《山居笔记》的全新修订版，余秋雨教授的很多经典文章此次都被收入其中。《山河之书》的核心篇目《我的文化山河》，从宏观上通述了中国山河的空间意义，读起来让人极为震撼。在核心篇目之后，即是余秋雨教授二十余年考察中国文化现场的脚印。</view>
     <view slot="footer">推荐度：93%</view>
 </i-card>
     </i-panel>
@@ -42,61 +33,83 @@
 import card from '@/components/card'
 
 export default {
-  data () {
-    return {
-      imgUrls:[
-        '//timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555729898350&di=92a67fa7c6433b9f60079a62e457af64&imgtype=0&src=http%3A%2F%2Fv1.qzone.cc%2Fpic%2F201608%2F15%2F20%2F19%2F57b1b343297d4387.jpeg%2521600x600.jpg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555729898350&di=0f2e2beb6657de0268d6473eabc0dafc&imgtype=0&src=http%3A%2F%2Fs9.rr.itc.cn%2Fr%2FwapChange%2F20173_31_17%2Fa0zvhl1070816226619.jpg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555729898346&di=53120318aab25723f14e4c70be9463b8&imgtype=0&src=http%3A%2F%2Fimg.mp.sohu.com%2Fupload%2F20170513%2F8e0db367b0a44076adbdf96271cd8b4b_th.png'
-      ],
-       indicatorDots: true,
-      autoplay: true,
-      interval: 5000,
-      duration: 1000,
-      value5: '',
-      shops: [],
-      isFolded: true,
-      motto: 'Hello miniprograme',
-      userInfo: {
-        nickName: 'mpvue',
-        avatarUrl: 'http://mpvue.com/assets/logo.png'
-      }
-    }
-  },
+
 
   components: {
     card
   },
 
   methods: {
-    xiuzhen(){
+   
+    luyao(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/book1/index/main'
       })
     },
-    zhuwu(){
+    qianzhongsh(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/book2/index/main'
       })
     },
-    jiuyang(){
+    baoluo(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/book3/index/main'
       })
     },
-    xiuxian(){
+     taizaizhi(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/book4/index/main'
       })
     },
-    yishi(){
+     yuqiuyu(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/book5/index/main'
       })
     },
+    xianxia(){
+      wx.navigateTo({
+        url: '/pages/grid1/xianxia/main'
+      })
+    },
+    dushi(){
+      wx.navigateTo({
+        url: '/pages/grid2/dushi/main'
+      })
+    },
+    xuanhuan(){
+      wx.navigateTo({
+        url: '/pages/grid3/xuanhuan/main'
+      })
+    },
+    aiqing(){
+      wx.navigateTo({
+        url: '/pages/grid4/aiqing/main'
+      })
+    },
+    mingzhu(){
+      wx.navigateTo({
+        url: '/pages/grid5/mingzhu/main'
+      })
+    },
+    wanben(){
+      wx.navigateTo({
+        url: '/pages/grid6/wanben/main'
+      })
+    }
   },
 
-  
+  created () {
+    const db=wx.cloud.database({env: 'lxy599111-n9b4d'})
+    db.collection('shop').get().then(
+      res=>{
+        this.shops=res.data
+        console.log(this.shops)
+      }
+    )
+    // wx.cloud.callFunction({name: 'user'}).then(
+    //   res=>{console.log(res)}
+    // )
+  }
 }
 </script>
 

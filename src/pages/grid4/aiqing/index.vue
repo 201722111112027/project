@@ -30,7 +30,7 @@
     <view slot="content">美女学霸贝微微，立志成为游戏工程师，化名“芦苇微微”跻身网游高手，因拒绝上传真实照片而惨遭侠侣“真水无香”无情抛弃，却意外得到江湖第一高手“一笑奈何”的垂青......</view>
     <view slot="footer">推荐度：63%</view>
 </i-card>
-<i-card @click="yishi" title="何以笙箫默" extra="顾漫" thumb="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3033349777,3319507516&fm=58&bpow=600&bpoh=864">
+<i-card @click="yishi" title="何以笙箫默" extra="顾漫" thumb="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1012176906,2583927852&fm=26&gp=0.jpg">
     <view slot="content">学时代的赵默笙，对C大法学系大才子何以琛一见倾心，开朗直率的她“死缠烂打”地倒追，与众不同的方式吸引了以琛的目光，一段纯纯的校园爱情悄悄滋生。然而......</view>
     <view slot="footer">推荐度：93%</view>
 </i-card>
@@ -45,9 +45,11 @@ export default {
   data () {
     return {
       imgUrls:[
-        '//timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555729898350&di=92a67fa7c6433b9f60079a62e457af64&imgtype=0&src=http%3A%2F%2Fv1.qzone.cc%2Fpic%2F201608%2F15%2F20%2F19%2F57b1b343297d4387.jpeg%2521600x600.jpg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555729898350&di=0f2e2beb6657de0268d6473eabc0dafc&imgtype=0&src=http%3A%2F%2Fs9.rr.itc.cn%2Fr%2FwapChange%2F20173_31_17%2Fa0zvhl1070816226619.jpg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555729898346&di=53120318aab25723f14e4c70be9463b8&imgtype=0&src=http%3A%2F%2Fimg.mp.sohu.com%2Fupload%2F20170513%2F8e0db367b0a44076adbdf96271cd8b4b_th.png'
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559909872&di=a578a0f7afb06a23370714547bacad5b&imgtype=jpg&er=1&src=http%3A%2F%2Fimage.biaobaiju.com%2Fuploads%2F20181220%2F23%2F1545320881-jxIvBiFsVS.jpg',
+        'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3373546447,1707066306&fm=26&gp=0.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559315196479&di=6903bd96043d70b037615833765c958d&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201704%2F07%2F20170407002432_e2KYm.thumb.700_0.jpeg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559315196478&di=e8171aae040b0164d9ee34258d7d8c55&imgtype=0&src=http%3A%2F%2Fimage.biaobaiju.com%2Fuploads%2F20181220%2F23%2F1545320882-BfMgrThVZO.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559315196478&di=b0d46d6c545a10a57c41d918b21ecd01&imgtype=0&src=http%3A%2F%2Fimage.biaobaiju.com%2Fuploads%2F20181220%2F23%2F1545320881-mjxwaVNfWh.jpg'
       ],
        indicatorDots: true,
       autoplay: true,

@@ -4,35 +4,31 @@
     一大批新书即将上线
     </i-notice-bar>
    
- <!-- <i-panel title="热门推荐">
-    <view class="top-padding">
-    <view v-for="item in shops" :key='item' class="top-padding">
-    <i-card  :title="item.name" :extra="item.type" thumb="/static/images/shop.png">
-    <view slot="content">{{item.introduction}}</view>
-    <view slot="footer">{{item.address}}</view>
-    </i-card></view>
-    </view>
-    </i-panel> -->
+
     <i-panel title="仙侠类热门推荐">
-    <i-card @click="xiuzhen" title="修真万年归来" extra="缸里有米" thumb="http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg">
-    <view slot="content">修真万年，登临宇宙巅峰，而今带着万载记忆重生繁华都市。这一世我只求顺心而为，守护所爱之人，弥补前世......</view>
-    <view slot="footer">推荐度：86%</view>
-    </i-card>
-    <i-card @click="zhuwu" title="诛天武帝" extra="云七公子" thumb="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=b93945dece1b9d168ac79d67cbdfb4eb/b03533fa828ba61e672c1f2e4134970a314e59f5.jpg">
+    <i-card @click="xiuxian" title="微微一笑很倾城" extra="顾漫" thumb="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559314338246&di=cd3dead0459288fd25f1d1ad0e2eb34b&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201610%2F03%2F20161003122639_A4ZfJ.jpeg">
+    <view slot="content">美女学霸贝微微，立志成为游戏工程师，化名“芦苇微微”跻身网游高手，因拒绝上传真实照片而惨遭侠侣“真水无香”无情抛弃，却意外得到江湖第一高手“一笑奈何”的垂青......</view>
+    <view slot="footer">推荐度：63%</view>
+</i-card>
+<i-card @click="yishi" title="何以笙箫默" extra="顾漫" thumb="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1012176906,2583927852&fm=26&gp=0.jpg">
+    <view slot="content">学时代的赵默笙，对C大法学系大才子何以琛一见倾心，开朗直率的她“死缠烂打”地倒追，与众不同的方式吸引了以琛的目光，一段纯纯的校园爱情悄悄滋生。然而......</view>
+    <view slot="footer">推荐度：93%</view>
+</i-card>
+<i-card @click="zhuwu" title="逆天狂医" extra="火锅下小面" thumb="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1558615449&di=586ab554197a79c05e3c28dd8700b3ce&src=http://hbimg.b0.upaiyun.com/ade774767e1e6273af7d3473ba114cbc42538def11666-1VTxs9_fw236">
     <view slot="content">逆天登仙路，一步一杀劫！萧逝水说你们逆的是天，踏的是路，我逆的是命，踏的是你们的尸骸。</view>
     <view slot="footer">推荐度：84%</view>
 </i-card>
-<i-card @click="jiuyang" title="九阳至尊" extra="剪刀石头布" thumb="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=7c98a1183bd3d539d53007915bee8235/caef76094b36acaf9baf171a71d98d1000e99c8d.jpg">
+<i-card @click="jiuyang" title="重生之神级奶爸" extra="鱼未秧" thumb="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558625575950&di=fa360402e8645056ea4e9c68f58652cf&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fef8dbf8b192a5adbafc6322b27abcd0005b785c3e474-5dBx2L_fw658">
     <view slot="content">修真界人心险恶，意外穿越，奈何重生后是一弃子，身世惨淡，幸偶遇后羿射日神功，收服九阳炉，踏平人间八方......</view>
     <view slot="footer">推荐度：73%</view>
 </i-card>
-<i-card @click="xiuxian" title="修仙狂徒" extra="王小蛮" thumb="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2621851148,2775158789&fm=58&bpow=856&bpoh=1063">
-    <view slot="content">心眼里藏着些花花肠子的街头混混，带着时灵时不灵的残破符法穿越异界，附身世家落魄少爷，且看他如何在......</view>
-    <view slot="footer">推荐度：63%</view>
-</i-card>
-<i-card @click="yishi" title="异世灵武天下" extra="禹枫" thumb="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3033349777,3319507516&fm=58&bpow=600&bpoh=864">
-    <view slot="content">穿越后成为已死的废柴少爷，遇上了神秘老者南叔。为亲者，为红颜，为身边最亲的人，陆少游从废柴一步步踏着...</view>
-    <view slot="footer">推荐度：93%</view>
+<i-card @click="luyao" title="平凡世界" extra="路遥" thumb="http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg">
+    <view slot="content">《平凡的世界》是中国作家路遥创作的一部百万字的小说。这是一部全景式地表现中国当代城乡社会生活的长篇小说，全书共三部。1986年12月首次出版。</view>
+    <view slot="footer">推荐度：98%</view>
+    </i-card>
+    <i-card @click="qianzhongsh" title="围城" extra="钱钟书" thumb="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=b93945dece1b9d168ac79d67cbdfb4eb/b03533fa828ba61e672c1f2e4134970a314e59f5.jpg">
+    <view slot="content">《围城》是钱钟书所著的长篇小说，是中国现代文学史上一部风格独特的讽刺小说。被誉为“新儒林外史”。第一版于1947年由上海晨光出版公司出版。故事主要写抗战初期知识分子的群相。</view>
+    <view slot="footer">推荐度：95%</view>
 </i-card>
     </i-panel>
   </div>
@@ -69,29 +65,34 @@ export default {
   },
 
   methods: {
-    xiuzhen(){
+    luyao(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/book1/index/main'
+      })
+    },
+    qianzhongsh(){
+      wx.navigateTo({
+        url: '/pages/book2/index/main'
       })
     },
     zhuwu(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/grid2/zhuwu/main'
       })
     },
     jiuyang(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/grid2/jiuyang/main'
       })
     },
-    xiuxian(){
+   xiuxian(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/grid4/xiuxian/main'
       })
     },
     yishi(){
       wx.navigateTo({
-        url: '/pages/pingfanshijie/main'
+        url: '/pages/grid4/yishi/main'
       })
     },
   },

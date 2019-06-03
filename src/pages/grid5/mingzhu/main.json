@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "名著经典",
+  "navigationBarTitleText": "名著导读",
   "usingComponents": {
     "i-card": "../../../../static/dist/card/index",
     "i-panel": "../../../../static/dist/panel/index",

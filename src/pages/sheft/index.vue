@@ -86,8 +86,83 @@
         </i-grid-icon>
         <i-grid-label >山河之书</i-grid-label>
     </i-grid-item>
+    <i-grid-item  @click="xiuzhen" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1978681538,2729255002&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label >修真万年归来</i-grid-label>
+    </i-grid-item>
     </i-grid>
     </i-panel>
+
+  <i-panel>
+     <i-grid i-class="no-border">
+    <i-grid-item  @click="zhuwu" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559316455881&di=1f6629a9a8cb51abea8bc137561ba38e&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180626%2Fa3feb9b12b7f42d98dad6f2bee80eeee.jpeg" />
+        </i-grid-icon>
+        <i-grid-label >诛天武帝</i-grid-label>
+    </i-grid-item>
+    <i-grid-item  @click="jiuyang" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559316455881&di=22859135668e1f2854a57b4f69c85cc4&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Ffront%2F24%2Fw494h330%2F20181219%2FWh-F-hqnkypq9787687.jpg" />
+        </i-grid-icon>
+        <i-grid-label >九阳至尊</i-grid-label>
+    </i-grid-item>
+    <i-grid-item  @click="xiuxian" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2386873990,1188411093&fm=26&gp=0.jpg" />
+        </i-grid-icon>
+        <i-grid-label >修仙狂徒</i-grid-label>
+    </i-grid-item>
+    </i-grid>
+    </i-panel>
+
+<i-panel>
+     <i-grid i-class="no-border">
+    <i-grid-item  @click="yishi" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3367722916,4062242920&fm=26&gp=0.jpg"/>
+        </i-grid-icon>
+        <i-grid-label >异世灵武天下</i-grid-label>
+    </i-grid-item>
+    <i-grid-item  @click="zhuwu2" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1558615449&di=586ab554197a79c05e3c28dd8700b3ce&src=http://hbimg.b0.upaiyun.com/ade774767e1e6273af7d3473ba114cbc42538def11666-1VTxs9_fw236" />
+        </i-grid-icon>
+        <i-grid-label > 逆天狂医</i-grid-label>
+    </i-grid-item>
+    <i-grid-item  @click="xiuzhen2" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558625575957&di=710744babaf4b7588eeb60e6f4e5eb28&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Ff7971a7744a664d20e4a37c0cdc157f2ba2acb1412fc8-Ph5paO_fw236" />
+        </i-grid-icon>
+        <i-grid-label >都市之仙帝归来</i-grid-label>
+    </i-grid-item>
+    </i-grid>
+    </i-panel>
+    <i-panel>
+     <i-grid i-class="no-border">
+    <i-grid-item  @click="jiuyang2" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558625575950&di=fa360402e8645056ea4e9c68f58652cf&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fef8dbf8b192a5adbafc6322b27abcd0005b785c3e474-5dBx2L_fw658"/>
+         </i-grid-icon>
+        <i-grid-label >重生之神级奶爸</i-grid-label>
+    </i-grid-item>
+    <i-grid-item  @click="xiuxian2" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558625575945&di=0a03e99c0db86ab56b4ebe5de51fb411&imgtype=0&src=http%3A%2F%2Fwenwen.soso.com%2Fp%2F20150516%2F20150516165145-704552704.jpg" />
+        </i-grid-icon>
+        <i-grid-label >最强玄门弃少</i-grid-label>
+    </i-grid-item>
+    <i-grid-item  @click="yishi2" i-class="no-border">
+        <i-grid-icon>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558625575952&di=f6d34c7bc7e88d61cb21ceb9516a3b88&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F80c4382d3e7fd3ebabbf8046870f6a12fa2c07a036823-E7Fihm_fw658" />
+        </i-grid-icon>
+        <i-grid-label >乡村小郎中</i-grid-label>
+    </i-grid-item>
+    </i-grid>
+    </i-panel>    
+
 </i-head>
       
   </div>
@@ -174,7 +249,57 @@ export default {
       wx.navigateTo({
         url: '/pages/shujia/bushenglian/main'
       })
-    }
+    },
+    xiuzhen(){
+      wx.navigateTo({
+        url: '/pages/grid1/xiuzhen/main'
+      })
+    },
+    zhuwu(){
+      wx.navigateTo({
+        url: '/pages/grid1/zhuwu/main'
+      })
+    },
+    jiuyang(){
+      wx.navigateTo({
+        url: '/pages/grid1/jiuyang/main'
+      })
+    },
+    xiuxian(){
+      wx.navigateTo({
+        url: '/pages/grid1/xiuxian/main'
+      })
+    },
+    yishi(){
+      wx.navigateTo({
+        url: '/pages/grid1/yishi/main'
+      })
+    },
+    xiuzhen2(){
+      wx.navigateTo({
+        url: '/pages/grid2/xiuzhen/main'
+      })
+    },
+    zhuwu2(){
+      wx.navigateTo({
+        url: '/pages/grid2/zhuwu/main'
+      })
+    },
+    jiuyang2(){
+      wx.navigateTo({
+        url: '/pages/grid2/jiuyang/main'
+      })
+    },
+    xiuxian2(){
+      wx.navigateTo({
+        url: '/pages/grid2/xiuxian/main'
+      })
+    },
+    yishi2(){
+      wx.navigateTo({
+        url: '/pages/grid2/yishi/main'
+      })
+    },
   },
 
   created () {
