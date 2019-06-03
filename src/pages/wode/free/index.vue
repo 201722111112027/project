@@ -1,6 +1,8 @@
 <template>
   <div>
-    <i-panel title="仙侠类热门推荐">
+    <i-notice-bar icon="systemprompt" loop>
+    今日免费！！！
+    </i-notice-bar>
     <i-card @click="xiuzhen" title="修真万年归来" extra="缸里有米" thumb="http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg">
     <view slot="content">修真万年，登临宇宙巅峰，而今带着万载记忆重生繁华都市。这一世我只求顺心而为，守护所爱之人，弥补前世......</view>
     <view slot="footer">推荐度：86%</view>
@@ -41,7 +43,6 @@
     <view slot="content">穿越后成为已死的废柴少爷，遇上了神秘老者南叔。为亲者，为红颜，为身边最亲的人，陆少游从废柴一步步踏着...</view>
     <view slot="footer">推荐度：93%</view>
 </i-card>
-    </i-panel>
   </div>
 </template>
 

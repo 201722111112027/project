@@ -42,14 +42,13 @@
         </i-grid-icon>
         <i-grid-label>全本下载</i-grid-label>
     </i-grid-item>
-    <i-grid-item type="ghost" @click="logisiticsGZFn" i-class="no-border">
+    <i-grid-item @click="logisiticsGZFn" i-class="no-border">
         <i-grid-icon>
             <image src="http://pic.51yuansu.com/pic2/cover/00/32/93/58110d765aa63_610.jpg" />
         </i-grid-icon>
         <i-grid-label>加入书架</i-grid-label>
     </i-grid-item>
     </i-grid> 
- <i-toast id="toast" />
   </div>
 </template>
 
@@ -84,10 +83,11 @@ export default {
     },
     
     logisiticsGZFn(){
-      $Toast({
-            content: '成功的提示',
-            type: 'success'
-        });
+      wx.showToast({
+      title: '成功添加',
+      icon: 'success',
+      duration: 2000
+      })
     }
   }
 }

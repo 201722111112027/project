@@ -98,18 +98,18 @@ export default {
     }
   },
 
-  created () {
-    const db=wx.cloud.database({env: 'lxy599111-n9b4d'})
-    db.collection('shop').get().then(
-      res=>{
-        this.shops=res.data
-        console.log(this.shops)
-      }
-    )
-    // wx.cloud.callFunction({name: 'user'}).then(
-    //   res=>{console.log(res)}
-    // )
-  }
+  // created () {
+  //   const db=wx.cloud.database({env: 'lxy599111-n9b4d'})
+  //   db.collection('shop').get().then(
+  //     res=>{
+  //       this.shops=res.data
+  //       console.log(this.shops)
+  //     }
+  //   )
+  //   // wx.cloud.callFunction({name: 'user'}).then(
+  //   //   res=>{console.log(res)}
+  //   // )
+  // }
 }
 </script>
 

@@ -8,7 +8,7 @@
       :autoplay="autoplay"
       :interval="interval"
       :duration="duration"
-      style="height:250px"
+      style="height:200px"
     >
     <block v-for="item in imgUrls" :key="item">
       <swiper-item>
@@ -89,9 +89,11 @@ export default {
   data () {
     return {
       imgUrls:[
-        '//timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555729898350&di=92a67fa7c6433b9f60079a62e457af64&imgtype=0&src=http%3A%2F%2Fv1.qzone.cc%2Fpic%2F201608%2F15%2F20%2F19%2F57b1b343297d4387.jpeg%2521600x600.jpg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555729898350&di=0f2e2beb6657de0268d6473eabc0dafc&imgtype=0&src=http%3A%2F%2Fs9.rr.itc.cn%2Fr%2FwapChange%2F20173_31_17%2Fa0zvhl1070816226619.jpg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555729898346&di=53120318aab25723f14e4c70be9463b8&imgtype=0&src=http%3A%2F%2Fimg.mp.sohu.com%2Fupload%2F20170513%2F8e0db367b0a44076adbdf96271cd8b4b_th.png'
+        'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3673068287,3206906851&fm=26&gp=0.jpg',
+        'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2163544082,1027834145&fm=26&gp=0.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559563743859&di=befa3b264a32d3acf25303423e1a42d9&imgtype=0&src=http%3A%2F%2Fimg005.hc360.cn%2Fhb%2Fuw0c936e04784babDae03294be8465ab0c.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559563743858&di=326da2ccb798da0d19143070351a3568&imgtype=0&src=http%3A%2F%2Fimg006.hc360.cn%2Fy3%2FM01%2F0F%2FD1%2FwKhQh1WArDmEPDHJAAAAAEE39FM393.jpg',
+        'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3822021502,4021542522&fm=26&gp=0.jpg'
       ],
        indicatorDots: false,
       autoplay: true,
@@ -187,18 +189,18 @@ export default {
     }
   },
 
-  created () {
-    const db=wx.cloud.database({env: 'lxy599111-n9b4d'})
-    db.collection('shop').get().then(
-      res=>{
-        this.shops=res.data
-        console.log(this.shops)
-      }
-    )
-    // wx.cloud.callFunction({name: 'user'}).then(
-    //   res=>{console.log(res)}
-    // )
-  }
+  // created () {
+  //   const db=wx.cloud.database({env: 'lxy599111-n9b4d'})
+  //   db.collection('shop').get().then(
+  //     res=>{
+  //       this.shops=res.data
+  //       console.log(this.shops)
+  //     }
+  //   )
+  //   // wx.cloud.callFunction({name: 'user'}).then(
+  //   //   res=>{console.log(res)}
+  //   // )
+  // }
 }
 </script>
 
