@@ -84,11 +84,12 @@ export default {
         url: '/pages/book2/weicheng/main'
       })
     },
-    logisiticsGZFn(){
-      $Toast({
-            content: '成功的提示',
-            type: 'success'
-        });
+   logisiticsGZFn(){
+      wx.showToast({
+      title: '成功添加',
+      icon: 'success',
+      duration: 2000
+      })
     }
   }
 }

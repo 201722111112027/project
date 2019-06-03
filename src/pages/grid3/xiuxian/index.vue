@@ -93,10 +93,11 @@ export default {
       })
     },
     logisiticsGZFn(){
-      $Toast({
-            content: '成功的提示',
-            type: 'success'
-        });
+      wx.showToast({
+      title: '成功添加',
+      icon: 'success',
+      duration: 2000
+      })
     }
   }
 }

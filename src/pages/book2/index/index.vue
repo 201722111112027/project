@@ -13,15 +13,7 @@
       </swiper-item>
     </block>
   </swiper>
-    <!-- <i-panel><view class="setting" bindtap='jumpLogin'>
-      <image class="image1" src='http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg' style="width:130rpx;height:180rpx;"></image>   
-      <text class="text" style="padding:7px;line-height:17px">
-      <text class="first">《平凡世界》\n</text>
-      <text class="sceond">路遥|史诗巨作\n\n</text>
-      <text class="third">9.7分</text>
-   </text>
-   </view>
-    </i-panel> -->
+  
     <i-panel><view class="pingfen">
       <i-rate 
             :change="onChange2" 
@@ -93,10 +85,11 @@ export default {
       })
     },
     logisiticsGZFn(){
-      $Toast({
-            content: '成功的提示',
-            type: 'success'
-        });
+      wx.showToast({
+      title: '成功添加',
+      icon: 'success',
+      duration: 2000
+      })
     }
   }
 }

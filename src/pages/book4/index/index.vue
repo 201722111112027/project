@@ -13,15 +13,7 @@
       </swiper-item>
     </block>
   </swiper>
-    <!-- <i-panel><view class="setting" bindtap='jumpLogin'>
-      <image class="image1" src='http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg' style="width:130rpx;height:180rpx;"></image>   
-      <text class="text" style="padding:7px;line-height:17px">
-      <text class="first">《平凡世界》\n</text>
-      <text class="sceond">路遥|史诗巨作\n\n</text>
-      <text class="third">9.7分</text>
-   </text>
-   </view>
-    </i-panel> -->
+    
     <i-panel><view class="pingfen">
       <i-rate 
             :change="onChange2" 
@@ -48,21 +40,13 @@
         </i-grid-icon>
         <i-grid-label>全本下载</i-grid-label>
     </i-grid-item>
-    <i-grid-item i-class="no-border">
+    <i-grid-item @click="logisiticsGZFn" i-class="no-border">
         <i-grid-icon>
             <image src="http://pic.51yuansu.com/pic2/cover/00/32/93/58110d765aa63_610.jpg" />
         </i-grid-icon>
         <i-grid-label>加入书架</i-grid-label>
     </i-grid-item>
     </i-grid> 
-  <!-- <i-cell-group>
-    <i-cell title="目录  20章" is-link url="/pages/book1/pfsj/main"></i-cell>
-</i-cell-group>
-<i-panel>
-  <view class="button">
-<button @click="handleClick" type="primary" style="color:red" >加入书架</button>
-</view>
-</i-panel> -->
   </div>
 </template>
 
@@ -99,6 +83,13 @@ export default {
     start(){
       wx.navigateTo({
         url: '/pages/book4/rjshg/main'
+      })
+    },
+     logisiticsGZFn(){
+      wx.showToast({
+      title: '成功添加',
+      icon: 'success',
+      duration: 2000
       })
     }
   }

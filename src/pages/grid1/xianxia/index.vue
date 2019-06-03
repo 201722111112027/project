@@ -94,6 +94,7 @@ export default {
         url: '/pages/grid1/yishi/main'
       })
     },
+    
   },
 
   
