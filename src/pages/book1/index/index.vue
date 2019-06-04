@@ -32,7 +32,7 @@
         </i-grid-icon>
         <i-grid-label  >免费试读</i-grid-label>
     </i-grid-item>
-     <i-grid-item @click="start" i-class="no-border">
+     <i-grid-item @click="down" i-class="no-border">
         <i-grid-icon>
             <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557854373039&di=3f1b9e375b73757c545add8fc9e40a03&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic2%2Fcover%2F00%2F35%2F45%2F5811a08bbb569_610.jpg" />
         </i-grid-icon>
@@ -73,6 +73,11 @@ export default {
   },
   methods: {
     start(){
+      wx.navigateTo({
+        url: '/pages/book1/pfsj/main'
+      })
+    },
+    down(){
       wx.navigateTo({
         url: '/pages/book1/pfsj/main'
       })
