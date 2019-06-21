@@ -119,21 +119,7 @@
     "pages/grid1/xiuzhen/main",
     "pages/grid1/xiuxian/main",
     "pages/grid1/yishi/main",
-
-    "pages/grid2/dushi/main",
-    "pages/grid2/zhuwu/main",
-    "pages/grid2/jiuyang/main",
-    "pages/grid2/xiuzhen/main",
-    "pages/grid2/xiuxian/main",
-    "pages/grid2/yishi/main",
-
-    "pages/grid3/xuanhuan/main",
-    "pages/grid3/zhuwu/main",
-    "pages/grid3/jiuyang/main",
-    "pages/grid3/xiuzhen/main",
-    "pages/grid3/xiuxian/main",
-    "pages/grid3/yishi/main",
-
+    
     "pages/grid4/aiqing/main",
     "pages/grid4/zhuwu/main",
     "pages/grid4/jiuyang/main",

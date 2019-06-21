@@ -16,47 +16,13 @@
       </swiper-item>
     </block>
   </swiper>
-    <i-grid i-class="no-border">
-    <i-grid-item @click="xianxia" i-class="no-border">
-        <i-grid-icon>
-            <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=606397164,1884706880&fm=111&gp=0.jpg" />
-        </i-grid-icon>
-        <i-grid-label>仙侠</i-grid-label>
-    </i-grid-item>
-    <i-grid-item @click="dushi" i-class="no-border">
-        <i-grid-icon>
-            <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=471158069,86109744&fm=27&gp=0.jpg" />
-        </i-grid-icon>
-        <i-grid-label>都市</i-grid-label>
-    </i-grid-item>
-    <i-grid-item @click="xuanhuan" i-class="no-border">
-        <i-grid-icon>
-            <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3815060115,2662064952&fm=27&gp=0.jpg" />
-        </i-grid-icon>
-        <i-grid-label>玄幻</i-grid-label>
-    </i-grid-item>
-    </i-grid>
-    <i-grid i-class="no-border">
-    <i-grid-item @click="aiqing" i-class="no-border">
-        <i-grid-icon>
-            <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=899375008,44305335&fm=27&gp=0.jpg" />
-        </i-grid-icon>
-        <i-grid-label>爱情</i-grid-label>
-    </i-grid-item>
-    <i-grid-item @click="mingzhu" i-class="no-border">
-        <i-grid-icon>
-            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1893895325,3596953077&fm=27&gp=0.jpg" />
-        </i-grid-icon>
-        <i-grid-label>名著</i-grid-label>
-    </i-grid-item>
-    <i-grid-item @click="wanben" i-class="no-border">
-        <i-grid-icon>
-            <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2445585430,4134671430&fm=27&gp=0.jpg" />
-        </i-grid-icon>
-        <i-grid-label>完本</i-grid-label>
-    </i-grid-item>
-</i-grid>
 
+<i-grid i-class="no-border">
+      <i-grid-item @click="goToJump(item.url)" v-for="item in grid" :key="item" i-class="no-border">
+        <i-grid-icon><image :src="item.img" /></i-grid-icon>
+        <i-grid-label>{{item.name}}</i-grid-label>
+      </i-grid-item>
+</i-grid>
     <i-panel title="图书热门推荐">
     <i-card @click="luyao" title="平凡世界" extra="路遥" thumb="http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg">
     <view slot="content">《平凡的世界》是中国作家路遥创作的一部百万字的小说。这是一部全景式地表现中国当代城乡社会生活的长篇小说，全书共三部。1986年12月首次出版。</view>
@@ -78,13 +44,14 @@
     <view slot="content">《山河之书》是《山居笔记》的全新修订版，余秋雨教授的很多经典文章此次都被收入其中。《山河之书》的核心篇目《我的文化山河》，从宏观上通述了中国山河的空间意义，读起来让人极为震撼。在核心篇目之后，即是余秋雨教授二十余年考察中国文化现场的脚印。</view>
     <view slot="footer">推荐度：93%</view>
 </i-card>
+
     </i-panel>
   </div>
 </template>
 
 <script>
 import card from '@/components/card'
-
+import top from '@/data/top.json'
 export default {
   data () {
     return {
@@ -95,18 +62,18 @@ export default {
         'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559563743858&di=326da2ccb798da0d19143070351a3568&imgtype=0&src=http%3A%2F%2Fimg006.hc360.cn%2Fy3%2FM01%2F0F%2FD1%2FwKhQh1WArDmEPDHJAAAAAEE39FM393.jpg',
         'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3822021502,4021542522&fm=26&gp=0.jpg'
       ],
-       indicatorDots: false,
+      indicatorDots: false,
       autoplay: true,
       interval: 5000,
       duration: 1000,
-      value5: '',
-      shops: [],
-      isFolded: true,
-      motto: 'Hello miniprograme',
-      userInfo: {
-        nickName: 'mpvue',
-        avatarUrl: 'http://mpvue.com/assets/logo.png'
-      }
+      recommand: top,
+      grid:[
+      {type:"1","name":"仙侠","img":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=606397164,1884706880&fm=111&gp=0.jpg","url":"/pages/grid1/xianxia/main"},
+      {type:"2","name":"爱情","img":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=899375008,44305335&fm=27&gp=0.jpg","url":"/pages/grid4/aiqing/main"},
+      {type:"3","name":"名著","img":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1893895325,3596953077&fm=27&gp=0.jpg","url":"/pages/grid5/mingzhu/main"},
+      {type:"4","name":"完本","img":"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2445585430,4134671430&fm=27&gp=0.jpg","url":"/pages/grid6/wanben/main"}
+      ],
+    
     }
   },
 
@@ -115,23 +82,10 @@ export default {
   },
 
   methods: {
-    bindViewTap () {
-      const url = '../logs/main'
-      if (mpvuePlatform === 'wx') {
-        mpvue.switchTab({ url })
-      } else {
-        mpvue.navigateTo({ url })
-      }
+    goToJump(url){
+      wx.navigateTo({url})
     },
-    change: function (e) {
-    this.setData({
-      isFolded: !this.data.isFolded,
-    })
-    },
-    clickHandle (ev) {
-      console.log('clickHandle:', ev)
-      // throw {message: 'custom test'}
-    },
+   
     luyao(){
       wx.navigateTo({
         url: '/pages/book1/index/main'
@@ -157,50 +111,7 @@ export default {
         url: '/pages/book5/index/main'
       })
     },
-    xianxia(){
-      wx.navigateTo({
-        url: '/pages/grid1/xianxia/main'
-      })
-    },
-    dushi(){
-      wx.navigateTo({
-        url: '/pages/grid2/dushi/main'
-      })
-    },
-    xuanhuan(){
-      wx.navigateTo({
-        url: '/pages/grid3/xuanhuan/main'
-      })
-    },
-    aiqing(){
-      wx.navigateTo({
-        url: '/pages/grid4/aiqing/main'
-      })
-    },
-    mingzhu(){
-      wx.navigateTo({
-        url: '/pages/grid5/mingzhu/main'
-      })
-    },
-    wanben(){
-      wx.navigateTo({
-        url: '/pages/grid6/wanben/main'
-      })
-    }
   },
-
-  // created () {
-  //   const db=wx.cloud.database({env: 'lxy599111-n9b4d'})
-  //   db.collection('shop').get().then(
-  //     res=>{
-  //       this.shops=res.data
-  //       console.log(this.shops)
-  //     }
-  //   )
-  //   // wx.cloud.callFunction({name: 'user'}).then(
-  //   //   res=>{console.log(res)}
-  //   // )
-  // }
 }
 </script>
 
@@ -211,42 +122,12 @@ div >>> .no-border {
 .top-padding {
   padding-top: 50rpx;
 }
-.userinfo {
+.setting{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-}
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 150px;
-}
-
-.form-control {
-  display: block;
-  padding: 0 12px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-}
-.all{
-  width:7.5rem;
-  height:1rem;
-  background-color:blue;
-}
-.all:after{
-  display:block;
-  content:'';
-  clear:both;
+  margin-left:9px;
+  margin-top: 4px;
 }
 .left{
   float:left;
@@ -254,20 +135,10 @@ div >>> .no-border {
   height:1rem;
   background-color:red;
 }
-
 .right{
   float:left;
   width:4.5rem;
   height:1rem;
   background-color:green;
 }
-.put
-{
-  background-color:yellow;
-	margin-top:100px;
-	margin-bottom:100px;
-	margin-right:0px;
-	margin-left:90%;
-}
- 
 </style>

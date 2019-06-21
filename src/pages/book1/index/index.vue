@@ -1,5 +1,5 @@
 <template>
-  <div class="counter-warp">
+  <div class="counter-warp" >
     <swiper
       :indicator-dots="indicatorDots"
       :autoplay="autoplay"
@@ -25,32 +25,46 @@
     <i-panel class="panel">
     <text class="text"> 青年，青年！无论受怎样的挫折和打击，都要咬着牙冠挺住，因为你们完全有机会重建生活；只要不灰心丧气，每一次挫折，只不过是通往新境界的一块普通绊脚石而绝不会置人于死命。                        ——路遥</text>
     </i-panel>
-   <i-grid i-class="no-border">
+   <!-- <i-grid i-class="no-border">
     <i-grid-item @click="start" class="test">
         <i-grid-icon>
             <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557854121615&di=b6b001204cc993e8bd6684863bf2dd86&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic2%2Fcover%2F00%2F32%2F00%2F5810d7724ac54_610.jpg" />
         </i-grid-icon>
         <i-grid-label  >免费试读</i-grid-label>
     </i-grid-item>
-     <i-grid-item @click="down" i-class="no-border">
+     <i-grid-item @click="start" i-class="no-border">
         <i-grid-icon>
             <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557854373039&di=3f1b9e375b73757c545add8fc9e40a03&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic2%2Fcover%2F00%2F35%2F45%2F5811a08bbb569_610.jpg" />
         </i-grid-icon>
         <i-grid-label>全本下载</i-grid-label>
     </i-grid-item>
-    <i-grid-item  @click="logisiticsGZFn" i-class="no-border">
+    <i-grid-item @click="logisiticsGZFn" i-class="no-border">
         <i-grid-icon>
             <image src="http://pic.51yuansu.com/pic2/cover/00/32/93/58110d765aa63_610.jpg" />
         </i-grid-icon>
         <i-grid-label>加入书架</i-grid-label>
     </i-grid-item>
+    </i-grid>  -->
+    <i-grid v-for="item in recommand" :key="item" i-class="no-border">
+      <i-grid-item @click="start(option)" class="test">
+        <i-grid-icon>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557854121615&di=b6b001204cc993e8bd6684863bf2dd86&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic2%2Fcover%2F00%2F32%2F00%2F5810d7724ac54_610.jpg" />
+        </i-grid-icon>
+        <i-grid-label>免费试读</i-grid-label>
+    </i-grid-item>
     </i-grid> 
+      <!-- <view class="setting">
+        <button class="button" @click='jump'>购票</button>
+        <button class="button" @click='jump'>购票</button>
+        <button class="button" @click='jump'>购票</button>
+      </view> -->
   </div>
 </template>
 
 <script>
 // Use Vuex
 import store from './store'
+import top from '@/data/top.json'
 
 export default {
   data () {
@@ -68,13 +82,14 @@ export default {
       indicatorDots: false,
       autoplay: true,
       interval: 5000,
-      duration: 1000
+      duration: 1000,
+      recommand: top
     }
   },
   methods: {
-    start(){
+    start(option){
       wx.navigateTo({
-        url: '/pages/book1/pfsj/main'
+        url: '/pages/sheft/main?name='+item.name
       })
     },
     down(){
@@ -82,7 +97,15 @@ export default {
         url: '/pages/book1/pfsj/main'
       })
     },
-    
+    goToJump(url){
+      wx.navigateTo({
+        url:'/pages/sheft/main'
+      })
+    },
+    jump(){
+    wx.navigateTo({
+       url:'/pages/sheft/main?id='+1+'&name='+"平凡世界"+'&img='+"http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg"+'&url='+"/pages/book1/index/main"    })
+    },
     logisiticsGZFn(){
       wx.showToast({
       title: '成功添加',
