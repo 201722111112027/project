@@ -84,6 +84,7 @@ export default {
       wx.navigateTo({
         url: '/pages/book4/rjshg/main'
       })
+      
     },
      logisiticsGZFn(){
       wx.showToast({
@@ -91,6 +92,27 @@ export default {
       icon: 'success',
       duration: 2000
       })
+       const db = wx.cloud.database({ env: 'lxy599111-n9b4d' })
+    db.collection('shujia').add({
+    // data 字段表示需新增的 JSON 数据
+    data: {
+    // _id: 'todo-identifiant-aleatoire', // 可选自定义 _id，在此处场景下用数据库自动分配的就可以了
+    name: "人间失格",
+    src: "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2621851148,2775158789&fm=58&bpow=856&bpoh=1063",
+    url: "/pages/book4/rjshg/main",
+    tags: [
+      "cloud",
+      "database"
+    ],
+    // // 为待办事项添加一个地理位置（113°E，23°N）
+    // location: new db.Geo.Point(113, 23),
+    done: false
+  },
+  success: function(res) {
+    // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
+    console.log(res)
+  }
+})
     }
   }
 }

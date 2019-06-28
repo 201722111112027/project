@@ -86,6 +86,7 @@ export default {
       wx.navigateTo({
         url: '/pages/book3/muyangshaonian/main'
       })
+      
     },
     logisiticsGZFn(){
       wx.showToast({
@@ -93,6 +94,27 @@ export default {
       icon: 'success',
       duration: 2000
       })
+       const db = wx.cloud.database({ env: 'lxy599111-n9b4d' })
+    db.collection('shujia').add({
+    // data 字段表示需新增的 JSON 数据
+    data: {
+    // _id: 'todo-identifiant-aleatoire', // 可选自定义 _id，在此处场景下用数据库自动分配的就可以了
+    name: "牧羊少年奇幻之旅",
+    src: "https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=7c98a1183bd3d539d53007915bee8235/caef76094b36acaf9baf171a71d98d1000e99c8d.jpg",
+    url: "/pages/book3/muyangshaonian/main",
+    tags: [
+      "cloud",
+      "database"
+    ],
+    // // 为待办事项添加一个地理位置（113°E，23°N）
+    // location: new db.Geo.Point(113, 23),
+    done: false
+  },
+  success: function(res) {
+    // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
+    console.log(res)
+  }
+})
     }
   }
 }

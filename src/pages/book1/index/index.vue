@@ -25,7 +25,7 @@
     <i-panel class="panel">
     <text class="text"> 青年，青年！无论受怎样的挫折和打击，都要咬着牙冠挺住，因为你们完全有机会重建生活；只要不灰心丧气，每一次挫折，只不过是通往新境界的一块普通绊脚石而绝不会置人于死命。                        ——路遥</text>
     </i-panel>
-   <!-- <i-grid i-class="no-border">
+   <i-grid i-class="no-border">
     <i-grid-item @click="start" class="test">
         <i-grid-icon>
             <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557854121615&di=b6b001204cc993e8bd6684863bf2dd86&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic2%2Fcover%2F00%2F32%2F00%2F5810d7724ac54_610.jpg" />
@@ -44,15 +44,15 @@
         </i-grid-icon>
         <i-grid-label>加入书架</i-grid-label>
     </i-grid-item>
-    </i-grid>  -->
-    <i-grid v-for="item in recommand" :key="item" i-class="no-border">
+    </i-grid> 
+    <!-- <i-grid v-for="item in recommand" :key="item" i-class="no-border">
       <i-grid-item @click="start(option)" class="test">
         <i-grid-icon>
             <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557854121615&di=b6b001204cc993e8bd6684863bf2dd86&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic2%2Fcover%2F00%2F32%2F00%2F5810d7724ac54_610.jpg" />
         </i-grid-icon>
         <i-grid-label>免费试读</i-grid-label>
     </i-grid-item>
-    </i-grid> 
+    </i-grid>  -->
       <!-- <view class="setting">
         <button class="button" @click='jump'>购票</button>
         <button class="button" @click='jump'>购票</button>
@@ -87,31 +87,45 @@ export default {
     }
   },
   methods: {
-    start(option){
+    start(){
       wx.navigateTo({
-        url: '/pages/sheft/main?name='+item.name
+        url: '/pages/book1/pfsj/main'
       })
+     
     },
     down(){
       wx.navigateTo({
         url: '/pages/book1/pfsj/main'
       })
     },
-    goToJump(url){
-      wx.navigateTo({
-        url:'/pages/sheft/main'
-      })
-    },
-    jump(){
-    wx.navigateTo({
-       url:'/pages/sheft/main?id='+1+'&name='+"平凡世界"+'&img='+"http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg"+'&url='+"/pages/book1/index/main"    })
-    },
+    
     logisiticsGZFn(){
       wx.showToast({
       title: '成功添加',
       icon: 'success',
       duration: 2000
       })
+      const db = wx.cloud.database({ env: 'lxy599111-n9b4d' })
+    db.collection('shujia').add({
+    // data 字段表示需新增的 JSON 数据
+    data: {
+    // _id: 'todo-identifiant-aleatoire', // 可选自定义 _id，在此处场景下用数据库自动分配的就可以了
+    name: "平凡世界",
+    src: "http://img1.imgtn.bdimg.com/it/u=929659737,3108829528&fm=15&gp=0.jpg",
+    url: "/pages/book1/pfsj/main",
+    tags: [
+      "cloud",
+      "database"
+    ],
+    // // 为待办事项添加一个地理位置（113°E，23°N）
+    // location: new db.Geo.Point(113, 23),
+    done: false
+  },
+  success: function(res) {
+    // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
+    console.log(res)
+  }
+})
     }
   }
 }

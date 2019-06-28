@@ -73,16 +73,12 @@ export default {
     }
   },
   methods: {
-    onChange2(e){
-        const index = e.detail.index;
-        this.setData({
-            'starIndex2' : index
-        })
-    },
+   
     start(){
       wx.navigateTo({
-        url: '/pages/book2/weicheng/main'
+        url: '/pages/book1/pfsj/main'
       })
+       
     },
     logisiticsGZFn(){
       wx.showToast({
@@ -90,6 +86,27 @@ export default {
       icon: 'success',
       duration: 2000
       })
+       const db = wx.cloud.database({ env: 'lxy599111-n9b4d' })
+    db.collection('shujia').add({
+    // data 字段表示需新增的 JSON 数据
+    data: {
+    // _id: 'todo-identifiant-aleatoire', // 可选自定义 _id，在此处场景下用数据库自动分配的就可以了
+    name: "九阳至尊",
+    src: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559316455881&di=22859135668e1f2854a57b4f69c85cc4&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Ffront%2F24%2Fw494h330%2F20181219%2FWh-F-hqnkypq9787687.jpg",
+    url: "/pages/book1/pfsj/main",
+    tags: [
+      "cloud",
+      "database"
+    ],
+    // // 为待办事项添加一个地理位置（113°E，23°N）
+    // location: new db.Geo.Point(113, 23),
+    done: false
+  },
+  success: function(res) {
+    // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
+    console.log(res)
+  }
+})
     }
   }
 }

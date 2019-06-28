@@ -83,6 +83,7 @@ export default {
       wx.navigateTo({
         url: '/pages/book2/weicheng/main'
       })
+    
     },
     logisiticsGZFn(){
       wx.showToast({
@@ -90,6 +91,27 @@ export default {
       icon: 'success',
       duration: 2000
       })
+    const db = wx.cloud.database({ env: 'lxy599111-n9b4d' })
+    db.collection('shujia').add({
+    // data 字段表示需新增的 JSON 数据
+    data: {
+    // _id: 'todo-identifiant-aleatoire', // 可选自定义 _id，在此处场景下用数据库自动分配的就可以了
+    name: "围城",
+    src: "https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=b93945dece1b9d168ac79d67cbdfb4eb/b03533fa828ba61e672c1f2e4134970a314e59f5.jpg",
+    url: "/pages/book2/weicheng/main",
+    tags: [
+      "cloud",
+      "database"
+    ],
+    // // 为待办事项添加一个地理位置（113°E，23°N）
+    // location: new db.Geo.Point(113, 23),
+    done: false
+  },
+  success: function(res) {
+    // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
+    console.log(res)
+  }
+})
     }
   }
 }

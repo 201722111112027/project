@@ -4,8 +4,7 @@
     签到领福利！！！
     </i-notice-bar>
     
-    <i-panel >
-    <i-grid i-class="no-border">
+    <!-- <i-grid i-class="no-border">
     <i-grid-item @click="transt1" i-class="no-border">
         <i-grid-icon>
             <image src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1952041692,3359063424&fm=58&bpow=180&bpoh=240" />
@@ -115,17 +114,12 @@
         </i-grid-icon>
         <i-grid-label >修仙狂徒</i-grid-label>
     </i-grid-item>
-    </i-grid>
-    </i-panel>
+    </i-grid> -->
+
+    
 
 
-    <!-- <i-grid i-class="no-border">
-      <i-grid-item @click="goToJump(option.url)" i-class="no-border">
-        <i-grid-icon><image :src='option.img' /></i-grid-icon>
-        <i-grid-label>{{option.name}}</i-grid-label>
-      </i-grid-item>
-    </i-grid>
-
+    <!--
 
     <view class='header-container'>
         <image class='bg' :src='option.img'/>
@@ -139,7 +133,14 @@
  
 
 </i-head>
-      
+    <i-grid i-class="no-border">
+      <i-grid-item v-for="item in books" :key="item" @click="goToJump(item.url)" class="grid">
+        <i-grid-icon><image :src="item.src" /></i-grid-icon>
+        <i-grid-label>{{item.name}}</i-grid-label>
+      </i-grid-item>
+    </i-grid>
+
+
   </div>
 </template>
 
@@ -147,112 +148,95 @@
 import card from '@/components/card'
 
 export default {
+  
   data () {
-    // option:[]
+    return{ 
+      books:[]
+    }
   },
-  // onLoad(option){
-  //  this.option=option;
-  //  console.log(option)
-  // },
+  
   components: {
     card
   },
 
-  methods: {
-  //  goToJump(url){
+  // methods: {
+  
+ 
+
+  //   goToJump(url){
   //     wx.navigateTo({
   //       url
   //     })
   //   },
-  onload(option){
-    console.log(option)
-  },
-  luyao(){
-      wx.navigateTo({
-        url: '/pages/book1/index/main'
-      })
-    },
-    qianzhongsh(){
-      wx.navigateTo({
-        url: '/pages/book2/index/main'
-      })
-    },
-    baoluo(){
-      wx.navigateTo({
-        url: '/pages/book3/index/main'
-      })
-    },
-    taizaizhi(){
-      wx.navigateTo({
-        url: '/pages/book4/index/main'
-      })
-    },
-    yuqiuyu(){
-      wx.navigateTo({
-        url: '/pages/book5/index/main'
-      })
-    },
-    transt1(){
-      wx.navigateTo({
-        url: '/pages/shujia/wudong/main'
-      })
-    },
-    transt2(){
-      wx.navigateTo({
-        url: '/pages/shujia/doupo/main'
-      })
-    },
-    transt3(){
-      wx.navigateTo({
-        url: '/pages/shujia/dazhuzai/main'
-      })
-    },
-    transt4(){
-      wx.navigateTo({
-        url: '/pages/shujia/shilitaohua/main'
-      })
-    },
-    transt6(){
-      wx.navigateTo({
-        url: '/pages/shujia/zhenshangshu/main'
-      })
-    },
-    transt6(){
-      wx.navigateTo({
-        url: '/pages/shujia/bushenglian/main'
-      })
-    },
-    xiuzhen(){
-      wx.navigateTo({
-        url: '/pages/grid1/xiuzhen/main'
-      })
-    },
-    zhuwu(){
-      wx.navigateTo({
-        url: '/pages/grid1/zhuwu/main'
-      })
-    },
-    jiuyang(){
-      wx.navigateTo({
-        url: '/pages/grid1/jiuyang/main'
-      })
-    },
-    xiuxian(){
-      wx.navigateTo({
-        url: '/pages/grid1/xiuxian/main'
-      })
-    },
-  },
+  // },
 
-  created () {
-  }
+  //  created () {
+  //   const db = wx.cloud.database({ env: 'lxy599111-n9b4d' })
+  //   db.collection('shujia').get().then(
+  //     res => {
+  //       console.log(res.data)
+  //       this.books = res.data
+  //     }
+  //   )
+  // }
+
 }
 </script>
 
 <style scoped>
 div >>> .no-border {
-  border-width: 0pt;
+ border-width: 0pt;
 }
+
+.grids {
+    position: relative;
+    overflow: hidden;
+}
+ 
+ .grids:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+} 
+ 
+ .grids:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    border-left: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+} 
+ 
+ /* 睁大眼睛看这里，尤其下面的width，50%是两列，33.3333%是三列，25%是四列 */
+ 
+.grid {
+    position: relative;
+    float: left;
+    
+    width: 50%;                                    
+    
+}
+ 
+
+
+
+
 .top-padding {
   padding-top: 50rpx;
 }
